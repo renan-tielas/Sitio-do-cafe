@@ -2,7 +2,7 @@ import styles from '../../styles/layout.module.css'
 
 // import Navegacao from './layout/Navegacao';
 import Logo from '../Componentes/Logo'
-import Navegacao from '../Componentes/Navegacao'
+import Navegacao from '../Arranjos/Navegacao'
 import Busca from '../Componentes/Busca'
 
 
@@ -12,11 +12,13 @@ import Busca from '../Componentes/Busca'
 const Cabecalho = () => {
     return (
       <div className={styles.cabecalho}>
-        
+        {/* <div className={styles.inline}> */}
       <Logo/>
+      
       <Navegacao/>
-      <Busca/>
+      {/* <Busca/> */}
       </div>
+      // </div>
     );
   };
   

@@ -1,0 +1,119 @@
+
+
+
+
+
+
+.navegacao{
+
+  
+    /* display: block; */
+    /* position: absolute; */
+    width: 100%;
+    /* height: var(--altura_cab); */
+  
+    /* top: 8rem; */
+  
+    background: var(--cor-vermelho);
+    border-radius: 3px;
+    display: flex;
+    /* flex-direction: column; */
+    /* border: red 4px solid; */
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+  
+    /* SITIO */
+      /* display: flex;
+      flex-direction: row;
+      position: relative;
+      height: var(--altura_bot);
+  left:20%;
+  align-content: space-around;
+  /* border: 4px rgb(255, 169, 9) solid; 
+  justify-content: space-evenly; */
+  }
+  
+  
+
+
+
+  .navegacao_rod{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: var(--altura_bot);
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  /* left:20%; */
+  align-content: space-between;
+  /* border: 4px rgb(255, 169, 9) solid; */
+  justify-content: space-between;
+  }
+
+.carrossel{
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    min-height: 29rem;
+    /* align-self: center; */
+    border-radius: 50px;
+    justify-content: center;
+    justify-items: center;
+    align-self: center;
+    position: relative;
+    border: 2px var(--cor-1) solid;
+    padding: 1rem 0rem;
+    margin-bottom: 4rem;
+    /* margin-top: 6vh; */
+  }
+
+
+  .texto_grande{
+    padding:1rem 2rem;
+    top:6rem;
+  }
+
+  .titulo_texto_grande{
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    /* border:1px rgb(59, 34, 5) solid; */
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    /* color:var(--cor-3); */
+  }
+
+  @media screen and (max-width: 600px) {
+.cabecalho{
+    /* height: auto; */
+}
+  .navegacao{
+
+    /* width: 100%; */
+    height: var(--altura_nav_vert);
+  
+    /* top: 8rem; */
+  
+    background: var(--cor-vermelho);
+    border-radius: 3px;
+    display: block;
+    all: none;
+    /* border:green 2px solid; */
+   }
+
+
+   .navegacao_rod{
+
+    /* width: 100%; */
+    height: var(--altura_nav_vert);
+  
+    top: 60px;
+  
+    /* background: var(--cor-vermelho); */
+    border-radius: 3px;
+    display: block;
+    all: none;
+    /* border:green 2px solid; */
+   }
+
+}

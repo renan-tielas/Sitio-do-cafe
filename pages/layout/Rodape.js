@@ -1,6 +1,6 @@
 import styles from '../../styles/layout.module.css'
 import Botao_rod from '../Componentes/Botao_rod';
-import Navegacao_rod from '../Componentes/Navegacao_rod';
+import Navegacao_rod from '../Arranjos/Navegacao_rod';
 // import Navegacao from './layout/Navegacao';
 
 
@@ -8,7 +8,6 @@ const Rodape = () => {
     return (
       
       <footer className={styles.rodape}>
-
 
        
 <Navegacao_rod/>
@@ -19,10 +18,11 @@ const Rodape = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Sitio do Café 
-          --- face / insta / youtube / email etc
+          
+         
         </a>
         
+Quick Galetos
         </div>
         <br/>
       </footer>

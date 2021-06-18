@@ -1,11 +1,11 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import {GoogleSpreadsheet} from 'google-spreadsheet'
-import credentials from '../../credentials/google-sheets-api.json'
+import credentials from '../../credentials/quick-galetos-edba7aae2f99'
 
 
 
 export default async function (req, res) {
-  const doc = new GoogleSpreadsheet('1jLYW7plus1HhLwMlq3O130SuC9VD5jEzL5yWa98fmso');
+  const doc = new GoogleSpreadsheet('1oDcnxJsRb7qv_dGnaTBbQwuHxBNOoiUxS430GrL2lss');
   
   await doc.useServiceAccountAuth({
     client_email: credentials.client_email,

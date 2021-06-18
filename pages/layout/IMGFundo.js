@@ -5,13 +5,13 @@ import Image from 'next/dist/client/image'
 const IMGFundo = () => {
     return (
       <Image className={styles.img_fundo}
-      src='/floresta.jpg'
+      src='/fachada.jpg'
       alt="descrição"
       // width='auto'
       width='auto'
       // maxWidth={300}
       height={140}
-      objectPosition='100% 25%'
+      objectPosition='10% 70%'
       />
         
       

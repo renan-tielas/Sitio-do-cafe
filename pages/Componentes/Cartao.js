@@ -10,11 +10,6 @@ export async function getStaticProps() {
   .then
 }
 
-const nextConfig = {
-  images: {
-    domains: ['https://scontent-gig2-1.xx.fbcdn.net/']
-  }
-}
 const Cartao = ({texto,posicao,conteudo}) => {
     return (
       <div className={styles.cartao_3}>
@@ -26,16 +21,14 @@ const Cartao = ({texto,posicao,conteudo}) => {
         src={conteudo[posicao].imagem}
         alt="descrição"
         // width='auto'
-        width={300}
+        width={350}
         crop
-        // maxWidth={300}
-        height={300}  
+        // maxWidth={350}
+        height={350}  
        />
 
        <div className={styles.conteudo_cartao_3}>
          
-      
-    
        {conteudo[posicao].nome}
 
 

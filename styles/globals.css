@@ -5,6 +5,7 @@ body {
   font-family:  'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif,Verdana,Roboto,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   /* font-size: 1rem; */
+  
 }
 
 a {
@@ -28,10 +29,21 @@ button{
 
 :root{ 
 
---cor-1: rgb(255, 169, 9);
---cor-2: rgb(2, 146, 21);
---cor-3: rgb(23, 99, 33);
---cor-fundo:rgb(255, 255, 255);
+
+
+  --cor-azul: #013567;
+  --cor-azul-claro: #013567;
+  --cor-azul-mais-claro: #bfd1e2;
+  --cor-vermelho:#a00707;
+  --cor-vermelho-claro:#cc4242;
+  --cor-vermelho-claro-2:#dd4343;
+
+
+
+--cor-1: #013567;
+--cor-2: #17446d;
+--cor-3: #17446d;
+--cor-fundo:hsl(66, 100%, 98%);
 --tile-size: 50px;
 
 --margem-esq:5vw;
@@ -40,8 +52,9 @@ button{
 
 --altura_rod:5.5rem;
 --altura_bot:4rem;
---altura_bot_rod:2rem;
+--altura_bot_rod:2.5rem;
 --altura_nav:5rem;
+--altura_nav_vert:25vh;
 --altura_cab:4rem;
 
 --border-width: 2px;
