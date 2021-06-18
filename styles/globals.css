@@ -33,12 +33,25 @@ button{
 --cor-3: rgb(23, 99, 33);
 --cor-fundo:rgb(255, 255, 255);
 --tile-size: 50px;
+
+--margem-esq:5vw;
+--espaco_baixo:4rem;
+
+
+--altura_rod:5.5rem;
 --altura_bot:4rem;
+--altura_bot_rod:2rem;
 --altura_nav:5rem;
---altura_cab:5rem;
+--altura_cab:4rem;
 
 --border-width: 2px;
 --border-radius: 4px;
+
+--radius-gd:50px;
+
+--radius-peq:10px;
+
+--radius-min:6px;
 /* width: var(--tile-size); */
 
 }
@@ -50,3 +63,8 @@ button{
 --altura_cab:10rem;
  }
    }
+
+   .inline{
+    display: flex;
+    flex-direction: row;
+}

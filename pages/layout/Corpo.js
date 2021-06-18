@@ -1,13 +1,13 @@
-import styles from '../../styles/corpo.module.css'
+import styles from '../../styles/layout.module.css'
 
 import Carrossel from '../Componentes/Carrossel';
+import Texto from '../Componentes/Texto'
 
-
-const Corpo = () => {
+const Corpo = ({conteudo}) => {
     return (
       <div className={styles.corpo}>
-        <Carrossel/>
-       
+        <Carrossel conteudo={conteudo} />
+        <Texto conteudo={conteudo}/>
       </div>
     );
   };

@@ -1,4 +1,4 @@
-import styles from '../../styles/cabecalho.module.css'
+import styles from '../../styles/layout.module.css'
 
 // import Navegacao from './layout/Navegacao';
 import Logo from '../Componentes/Logo'
