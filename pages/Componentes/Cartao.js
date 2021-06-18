@@ -4,9 +4,16 @@ import Image from 'next/image'
 import DadosAPI from '../DadosAPI';
 
 
+
 export async function getStaticProps() {
   const dadosDaAPI = await fetch('http://localhost:3000/api/hello')
   .then
+}
+
+const nextConfig = {
+  images: {
+    domains: ['https://scontent-gig2-1.xx.fbcdn.net/']
+  }
 }
 const Cartao = ({texto,posicao,conteudo}) => {
     return (
@@ -15,7 +22,7 @@ const Cartao = ({texto,posicao,conteudo}) => {
        <br/>
        <br/>
 
-       <img className={styles.cartao_3_img}
+       <Image className={styles.cartao_3_img}
         src={conteudo[posicao].imagem}
         alt="descrição"
         // width='auto'

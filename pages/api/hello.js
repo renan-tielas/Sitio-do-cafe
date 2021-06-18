@@ -18,8 +18,8 @@ export default async function (req, res) {
 
 
 
-  const sheet = doc.sheetsByIndex[0]; // or use doc.sheetsById[id] or doc.sheetsByTitle[title]
-  const rows = await sheet.getRows(); // can pass in { limit, offset }
+  const aba_1 = doc.sheetsByIndex[0]; // or use doc.sheetsById[id] or doc.sheetsByTitle[title]
+  const rows = await aba_1.getRows(); // can pass in { limit, offset }
  
   const conteudo = rows.map(({nome, imagem})=>{
     return{
