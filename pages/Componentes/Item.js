@@ -12,10 +12,12 @@ const Item = ({conteudo,posicao,intervalo_a,intervalo_b}) => {
 {conteudo[posicao].comida_nome}
 
 </a>
+<a className={styles.item_preco}>
+{conteudo[posicao].comida_preco}
+</a>
 <a className={styles.item_descricao}>
 {conteudo[posicao].comida_descricao}
 </a>
-{conteudo[posicao].comida_preco}
 
 </div>
     

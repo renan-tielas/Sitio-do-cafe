@@ -1,8 +1,23 @@
+@font-face {
+  font-family: League Mono Variable;
+  src: url(LeagueMono-WideThin.woff);
+}
+
+@font-face {
+  font-family: LigaBold;
+  src: url(LeagueMono-bold.woff);
+}
+
+@font-face {
+  font-family: Palatino;
+  src: url(palatino-bold.ttf);
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family:  'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif,Verdana,Roboto,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif,Verdana,Roboto,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   /* font-size: 1rem; */
   

@@ -45,13 +45,13 @@
   /* width: 100vw; */
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   /* max-height: auto; */
   position: relative;
-  top:100px;
+  top:60px;
   justify-content: center;
   /* align-items:center; */
-  align-content: center;
+  /* align-content: center; */
 border-color: red solid 4px;
 padding-bottom: var(--espaco_baixo);;
 }
@@ -64,7 +64,7 @@ padding-bottom: var(--espaco_baixo);;
   min-height: 100vh;
   /* max-height: auto; */
   position: relative;
-  background-color: rgb(249, 255, 191);   
+  background-color: rgb(235, 235, 198);   
   top:50px;
   justify-content: center;
   /* align-items:center; */

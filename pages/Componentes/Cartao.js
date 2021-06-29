@@ -13,7 +13,9 @@ export async function getStaticProps() {
 const Cartao = ({texto,posicao,conteudo}) => {
     return (
       <div className={styles.cartao_3}>
+        <div className={styles.cartao_3_titulo}>
        {texto}
+       </div>
        <br/>
        <br/>
 
@@ -21,18 +23,17 @@ const Cartao = ({texto,posicao,conteudo}) => {
         src={conteudo[posicao].imagem}
         alt="descrição"
         // width='auto'
-        width={350}
+        width={550}
         crop
         // maxWidth={350}
-        height={350}  
+        height={550}  
        />
 
-       <div className={styles.conteudo_cartao_3}>
+       {/* <div className={styles.conteudo_cartao_3}>
          
-       {conteudo[posicao].nome}
+       {/* {conteudo[posicao].nome} 
 
-
-     </div>
+     </div> */}
       </div>
     );
   };

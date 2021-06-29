@@ -14,7 +14,7 @@ const Logo = ({mudaRenderiza}) => {
       // width='auto'
       width='auto'
       // maxWidth={300}
-      height={54}
+      height={64}
       // objectPosition='100% 25%'
       
       />

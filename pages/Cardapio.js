@@ -26,7 +26,8 @@ export default function Cardapio({ conteudo,mudaRenderiza }) {
     
 
       <div className={styles.corpo_cardapio}>
-      <PaginaCardapio conteudo={conteudo} titulo='Entradas' />
+      <PaginaCardapio conteudo={conteudo} posicao_a={1} posicao_b={10} titulo='Carnes' />
+      {/* <PaginaCardapio conteudo={conteudo} pagina={2}  /> */}
       </div>
         
       {/* <IMGFundo /> */}
