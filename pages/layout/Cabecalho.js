@@ -9,13 +9,13 @@ import Busca from '../Componentes/Busca'
 
 
 
-const Cabecalho = () => {
+const Cabecalho = ({funcao}) => {
     return (
       <div className={styles.cabecalho}>
         {/* <div className={styles.inline}> */}
-      <Logo/>
+      <Logo  mudaRenderiza={funcao}/>
       
-      <Navegacao/>
+      <Navegacao mudaRenderiza={funcao} />
       {/* <Busca/> */}
       </div>
       // </div>

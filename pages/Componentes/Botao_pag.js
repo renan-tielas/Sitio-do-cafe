@@ -3,10 +3,10 @@ import Link from 'next/link'
 // import Navegacao from './layout/Navegacao';
 
 
-const Botao_pag = ({rota,texto}) => {
+const Botao_pag = ({rota,texto,funcao,palavra}) => {
     return (
-      <button className={styles.botao_pag}>
-        <Link href={rota}>
+      <button className={styles.botao_pag} onClick={() => funcao(palavra)}>
+        {/* <Link href={rota}> */}
           {/* nao esta funcionando a rota */}
 
        <div className={styles.botao_titulo_sobe}>
@@ -16,7 +16,7 @@ const Botao_pag = ({rota,texto}) => {
          </div>
        
   
-      </Link>
+      {/* </Link> */}
       </button>
     )
     

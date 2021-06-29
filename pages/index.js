@@ -1,7 +1,6 @@
 import Home from "./Home";
 
-
-export async function getServerSideProps() {
+export async function getStaticProps() {
     const dadosDaAPI = await fetch('http://localhost:3000/api/hello')
     .then((res) =>{
         if(res.ok){
@@ -19,4 +18,4 @@ export async function getServerSideProps() {
     }
 }
 
-export default Home
+export default Home 

@@ -1,7 +1,7 @@
 import styles from '../../styles/componentes.module.css'
 import Image from 'next/image'
 // import Navegacao from './layout/Navegacao';
-import DadosAPI from '../DadosAPI';
+// import DadosAPI from '../DadosAPI';
 
 
 

@@ -1,29 +1,14 @@
 
 
 .logo{
-/* 
-  background-image: url(./logo-quick.png);
-  background-position: center;
-  background-size: 24rem 18rem;
-  padding: 2rem 0 6rem;
-  background-repeat: no-repeat;
-  z-index: 1;
-  /* left:50%;
-  align-self: center;
-  justify-self: center; */
-  /* border: red 2px solid; 
-  position: relative; */
 
-
-     /* width: 6rem; */
-    /* height: var(--altura_cab);    */
-    /* border: green 2px solid; */
     align-self: center;
     justify-self: center;
     margin-left:2rem;
     margin-right:2rem;
-    margin-top: 0.2rem;
+    /* margin-top: 0.2rem; */
     min-width: 16rem;
+    /* height:  var(--altura_cab); */
     text-align: center; 
 }
 
@@ -38,7 +23,7 @@
   transition: 0.2s ease-out;
   padding-bottom: 4px;
   /* transform: scale(1.03); */
-  box-shadow: 0 0 10px 6px rgb(255, 255, 255);
+  box-shadow: 0 0 10px 6px rgb(255, 249, 165);
   color: #ffffff;
     font-weight: 1000;
     cursor: pointer;
@@ -86,7 +71,7 @@
   transition: 0.2s ease-out;
   padding-bottom: 6px;
   /* transform: scale(1.03); */
-  box-shadow: 0 0 10px 2px rgb(255, 255, 255);
+  box-shadow: 0 0 10px 2px rgb(255, 249, 165);
   color: #ffffff;
     font-weight: 1000;
   /* border:5px solid white; */
@@ -253,6 +238,23 @@ font-weight: 800;
   /* border:5px solid white; */
 }
 
+
+
+.item{
+  height:4rem;
+  padding-left: 1.4rem;
+  padding-right: 1.6rem;
+}
+
+.item_nome{
+  position: relative;
+  top:-10px;
+}
+.item_descricao{
+  position: relative;
+  top:10px;
+  left:-44px;
+}
 @media screen and (max-width: 600px) {
   .botao_pag{
      /* margin: 0 1rem ; */

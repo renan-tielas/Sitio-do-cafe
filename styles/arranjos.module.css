@@ -83,6 +83,44 @@
     /* color:var(--cor-3); */
   }
 
+  
+  .titulo_cardapio{
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    /* border:1px rgb(59, 34, 5) solid; */
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    /* color:var(--cor-3); */
+  }
+
+
+.pagina{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+width: 80vw ;
+  /* border:2px red solid; */
+  /* align-content: center; */
+  align-self: center;   
+  padding-top:2rem ;
+  padding-bottom:2rem ;
+  justify-content: center;
+  background-color:rgb(255, 255, 255);
+  /* text-align:center ; */
+  box-shadow: 2px 4px 10px 2px rgb(0, 0, 0,0.6);
+}
+
+
+
+
+
+
+
+
+
+
+
   @media screen and (max-width: 600px) {
 .cabecalho{
     /* height: auto; */

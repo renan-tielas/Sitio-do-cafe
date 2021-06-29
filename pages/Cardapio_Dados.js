@@ -1,7 +1,9 @@
-// import Home from ".";
 
 
-export async function getServerSideProps() {
+
+import Cardapio from "./Cardapio";
+
+export async function getStaticProps() {
     const dadosDaAPI = await fetch('http://localhost:3000/api/hello')
     .then((res) =>{
         if(res.ok){
@@ -19,4 +21,7 @@ export async function getServerSideProps() {
     }
 }
 
-// export default DadosAPI
+export default Cardapio 
+
+
+  export default Cardapio;

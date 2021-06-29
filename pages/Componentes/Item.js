@@ -1,18 +1,26 @@
 import styles from '../../styles/componentes.module.css'
 
 // import Conteudo_texto from './Conteudo_texto';
-import Item from './Item'
 
-const PaginaCardapio = ({conteudo,posicao}) => {
+
+const Item = ({conteudo,posicao,intervalo_a,intervalo_b}) => {
     return (
 
-
+// console.log(conteudo)
 <div className={styles.item}>
+<a className={styles.item_nome}>
+{conteudo[posicao].comida_nome}
+
+</a>
+<a className={styles.item_descricao}>
+{conteudo[posicao].comida_descricao}
+</a>
+{conteudo[posicao].comida_preco}
 
 </div>
     
     );
   };
   
-  export default PaginaCardapio;
+  export default Item;
 

@@ -3,7 +3,7 @@
 
 .estrutura {
   /* height: 100vh; */
-  width: 100vw;
+  /* width: 100vw; */
   padding: 0 ;
   display: flex;
   flex-direction: column;
@@ -13,6 +13,7 @@
   background-color: var(--cor-fundo);
   /* background-color: #cc4242; */
   /* float: inline-start; */
+    /* border:2px green solid; */
 }
 
 
@@ -41,7 +42,7 @@
 
 .corpo{
   /* border:2px red solid; */
-  width: 100vw;
+  /* width: 100vw; */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -55,7 +56,22 @@ border-color: red solid 4px;
 padding-bottom: var(--espaco_baixo);;
 }
 
-
+.corpo_cardapio{
+  /* border:2px red solid; */
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* max-height: auto; */
+  position: relative;
+  background-color: rgb(249, 255, 191);   
+  top:50px;
+  justify-content: center;
+  /* align-items:center; */
+  align-content: center;
+border-color: red solid 4px;
+padding-bottom: var(--espaco_baixo);;
+}
 
 .img_fundo{
   object-fit: cover;
@@ -68,7 +84,7 @@ padding-bottom: var(--espaco_baixo);;
 
 
 .rodape{
-  width: 100vw;
+  /* width: 100vw; */
   height:var(--altura_rod);
   color: white;
   /* height: 15vh; */
