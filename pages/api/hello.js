@@ -21,9 +21,9 @@ export default async function (req, res) {
   const aba_1 = doc.sheetsByIndex[0]; // or use doc.sheetsById[id] or doc.sheetsByTitle[title]
   const rows = await aba_1.getRows(); // can pass in { limit, offset }
  
-  const conteudo = rows.map(({nome,imagem,comida_nome,comida_descricao,comida_preco,comida_foto})=>{
+  const conteudo = rows.map(({nome,imagem,categoria,comida_nome,comida_descricao,comida_preco,comida_preco_grande,comida_foto})=>{
     return{
-      nome,imagem,comida_nome,comida_descricao,comida_preco,comida_foto
+      nome,imagem,categoria,comida_nome,comida_descricao,comida_preco,comida_preco_grande,comida_foto
     }
   })
 

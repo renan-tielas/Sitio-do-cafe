@@ -33,6 +33,8 @@
   justify-content: space-evenly; */
   }
   
+
+  
   
 
 
@@ -87,15 +89,38 @@
   .titulo_cardapio{
     font-size: 1.6rem;
     margin-top: 1rem;
+    margin-bottom: 2rem;
     /* margin-bottom: 1.5rem; */
     text-align: center;
     /* border:1px rgb(59, 34, 5) solid; */
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     font-weight: 1000 ;
+    font-family: Palatino;
+    font-size: 35px;
     /* color:var(--cor-3); */
   }
 
+
+  .navcardapio{
+
+  
+    /* display: block; */
+    position: relative;
+    width: 80vw;
+    max-width: 800px;
+    /* height: var(--altura_cab); */
+  
+    top: 3.9rem;
+    align-self: center;   
+    justify-content: space-around;
+    background: var(--cor-vermelho);
+    border-radius: 3px;
+    display: flex;
+  overflow:scroll;
+  overflow-y: hidden;
+  /* border:10px orange solid; */
+  }
 
 .pagina{
   margin-top: 4rem;
@@ -128,9 +153,24 @@ max-width: 800px;
 
 
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 700px) {
 .cabecalho{
     /* height: auto; */
+}
+.navcardapio{
+top:20vh;
+width: 90vw;
+}
+.pagina{
+  top:20vh;
+  width: 90vw;
+}
+
+.conteudo_cardapio{
+
+  margin: 0 1.4rem;
+  /* border: black solid 1px; */
+
 }
   .navegacao{
 

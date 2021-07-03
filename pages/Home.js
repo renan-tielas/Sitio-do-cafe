@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 // import styles from '../styles/Home.module.css'
 import styles from '../styles/layout.module.css'
-
+import Link from 'next/link'
 
 // import Explicacao from './Componentes/Explicacao';
 
@@ -15,22 +15,28 @@ import Comidas from './Arranjos/Comidas';
 
 import { useState } from 'react';
 import Cardapio from './Cardapio';
-
+import Botao_ref from './Componentes/Botao_ref';
+import {useRef} from 'react'
 
 
 
 export default function Home({ conteudo }) {
 
-
-  
+let posicaoElemento = useRef('nulo')
 
   const [renderiza, setRenderiza] = useState('inicio')
   // renderizaDimensao = 
 
+
+  const posiciona =() => {
+    posicaoElemento.current.scrollIntoView()    
+    console.log(posicaoElemento)
+  }
+
   function mudaRenderiza (pagina)  {
         
         // if (renderiza == 'inicio') {
-              setRenderiza(pagina)
+              setRenderiza(pagina)  
               console.log('função liga',pagina)
         // } else {
         //    setRenderiza('inicio')
@@ -52,15 +58,26 @@ export default function Home({ conteudo }) {
         </Head>
   
   
-        <Cabecalho funcao={mudaRenderiza}/>
+        <Cabecalho id='foo'funcao={mudaRenderiza}/>
   
-        <div className={styles.corpo}>
-          <Carrossel conteudo={conteudo} />
+        <div  ref={posicaoElemento} className={styles.corpo}>
+          <Carrossel   conteudo={conteudo} />
+          <input type="text"/>
           <Comidas/>
-        </div>
+        
         {/* <div className={styles.div_espaço}></div> */}
   
   
+        {/* <Link href="#foo" passHref> */}
+  <button   className={styles.botao} onClick={posiciona}  >
+    
+CLICA
+
+  </button>
+
+  </div>
+
+{/* </Link> */}
         <IMGFundo />
         <Rodape />
   

@@ -1,60 +1,67 @@
 import styles from '../../styles/arranjos.module.css'
-
+import React from 'react';
+import { useState } from 'react';
 // import Conteudo_texto from './Conteudo_texto';
 import Item from '../Componentes/Item'
 
-const PaginaCardapio = ({conteudo, pagina,,posicao_a,posicao_b titulo}) => {
 
-    const listItems = numbers.map((number) =>
-    <li>{number}</li>
-  );
+// const FancyButton = React.forwardRef((props, ref) => (
+//     <button ref={ref} className="FancyButton">
+//       {props.children}
+//     </button>));
 
-    for (let index = posicao_a; index < posicao_b; index++) {
-        const range = range[index];
-        
-    }
-    
+// {conteudo, pagina,posicao_a,posicao_b, titulo}
+const PaginaCardapio = (({key,conteudo, pagina,posicao_a,posicao_b, titulo,ref,estaAtivo, poeAtivo}) => {
+    let comidas_nome=[]
+    let comidas_descricao=[]
+    let comidas_preco=[]
+    let comidas_foto=[]
+    let comidas_preco_grande=[]
+    let numeros=[]
+    let categorias=[]
+
+for (let i = posicao_a; i < posicao_b+1; i++) {
+    numeros[i]=[i]
+comidas_nome[i]=conteudo[i].comida_nome
+comidas_descricao[i]=conteudo[i].comida_descricao
+comidas_preco[i]=conteudo[i].comida_preco
+comidas_preco_grande[i]=conteudo[i].comida_preco_grande
+comidas_foto[i]=conteudo[i].comida_foto
+categorias[i]=conteudo[i].categoria
+}
+
+
+
+
     return (
 
-
-<div className={styles.pagina}>
+<div ref={ref} className={styles.pagina}>
+<a id={'pag3'}>
 <div className={styles.conteudo_cardapio}>
+
 <div className={styles.titulo_cardapio}>
 {titulo}
+</div>
 
+     {
+        numeros.map((numero,index)=>{
+            return <Item key={index}
+            nome={comidas_nome[numero]}
+            descricao={comidas_descricao[numero]}
+            indice={index}
+            estaAtivo={estaAtivo}
+            poeAtivo={poeAtivo}
+            preco={comidas_preco[numero]}
+            preco_grande={comidas_preco_grande[numero]}
+            foto={comidas_foto[numero]}
+            categoria={categorias[numero]} />
+        })}
 
 </div>
-{/* <Conteudo_Cardapio PaginaCardapio={conteudo.PaginaCardapio} posicao={0} />  */}
-{/* {PegaC(conteudo)} */}
-
-{/* {conteudo.comida_nome.map((conteudo,posicao)=>{
-         {if (conteudo[posicao].comida_nome) {
-            return <Item posicao={posicao} conteudo={conteudo}/>
-        } } }) }  */}
-     {/* {range.map((conteudo,range)=>(
-         for (let index = 0; index < array.length; index++) {
-             <Item posicao={0} conteudo={conteudo}/> 
-             
-         }
-     
-      */}
-     {/* ))} */}
-<Item posicao={0} conteudo={conteudo}/>
-<Item posicao={1} conteudo={conteudo}/>
-<Item posicao={2} conteudo={conteudo}/>
-<Item posicao={3} conteudo={conteudo}/>
-<Item posicao={4} conteudo={conteudo}/>
-<Item posicao={5} conteudo={conteudo}/>
-<Item posicao={6} conteudo={conteudo}/>
-<Item posicao={7} conteudo={conteudo}/>
-<Item posicao={8} conteudo={conteudo}/>
-<Item posicao={9} conteudo={conteudo}/>
-<Item posicao={10} conteudo={conteudo}/>
+</a>
 </div>
-</div>
-    
-    );
-  };
+     );
+  });
   
-  export default PaginaCardapio;
+  export default  (PaginaCardapio);
 
