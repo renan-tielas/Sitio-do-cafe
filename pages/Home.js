@@ -62,18 +62,14 @@ let posicaoElemento = useRef('nulo')
   
         <div  ref={posicaoElemento} className={styles.corpo}>
           <Carrossel   conteudo={conteudo} />
-          <input type="text"/>
+ 
           <Comidas/>
         
         {/* <div className={styles.div_espaço}></div> */}
   
   
         {/* <Link href="#foo" passHref> */}
-  <button   className={styles.botao} onClick={posiciona}  >
-    
-CLICA
-
-  </button>
+ 
 
   </div>
 

@@ -13,7 +13,7 @@
     /* height: var(--altura_cab); */
   
     /* top: 8rem; */
-  
+  z-index: 30;
     background: var(--cor-vermelho);
     border-radius: 3px;
     display: flex;
@@ -107,16 +107,19 @@
   
     /* display: block; */
     position: relative;
+    position: fixed;
+    /* z-index: 10; */
     width: 80vw;
     max-width: 800px;
     /* height: var(--altura_cab); */
   
-    top: 3.9rem;
+    top: 0rem;
     align-self: center;   
     justify-content: space-around;
     background: var(--cor-vermelho);
     border-radius: 3px;
     display: flex;
+    z-index: 2;
   overflow:scroll;
   overflow-y: hidden;
   /* border:10px orange solid; */
@@ -127,6 +130,8 @@
   margin-bottom: 4rem;
 width: 80vw ;
 max-width: 800px;
+/* position: relative; */
+/* left: 40%; */
   /* border:2px red solid; */
   /* align-content: center; */
   align-self: center;   
@@ -155,11 +160,12 @@ max-width: 800px;
 
   @media screen and (max-width: 700px) {
 .cabecalho{
-    /* height: auto; */
+    height: auto;
 }
 .navcardapio{
-top:20vh;
+/* top:20vh; */
 width: 90vw;
+
 }
 .pagina{
   top:20vh;

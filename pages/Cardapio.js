@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 
 
-import Cabecalho from './layout/Cabecalho';
+import Cabecalho_Cardapio from './layout/Cabecalho_Cardapio';
 
 import PaginaCardapio from './Arranjos/PaginaCardapio';
 import NavCardapio from './Arranjos/NavCardapio';
@@ -12,34 +12,21 @@ import Rodape from './layout/Rodape';
 import { useRef } from 'react';
 import { useState } from 'react';
 export default function Cardapio({ conteudo,mudaRenderiza }) {
-  let posicaoElemento = useRef('nulo')
-  // const posicaoElemento = useRef(null)
+
+
+  let posicaoElemento= [];
+  for (let i = 0; i < 5; i++) {
+    posicaoElemento[i]= useRef('nulo');
+    
+  }
+ 
+ 
   // const myRef2 = useRef(null)
   // const myRef3 = useRef(null)
   // const myRef4 = useRef(null)
   // const myRef = [useRef(null),useRef(null),useRef(null),useRef(null),]
 
-  const posiciona =() => {
-    // posicaoElemento.current.focus()    
-    console.log(posicaoElemento)
-  }
 
-  // run this function from an event handler or an effect to execute scroll 
-
-  // const [renderiza, setRenderiza] = useState('primeiro')
-  // renderizaDimensao = 
-
-
-  // const myRef = useRef(null)
-
-  //  const executeScroll = () => myRef.current.scrollIntoView()    
-  //  // run this function from an event handler or an effect to execute scroll 
-
-  //  return (
-  //     <> 
-  //        <div ref={myRef}>Element to scroll to</div> 
-  //        <button onClick={executeScroll}> Click to scroll </button> 
-  //     </>
   const [estaAtivo,setAtivo] = useState(null)
   const poeAtivo = (indice) =>{
       if (indice==indice){
@@ -49,6 +36,16 @@ export default function Cardapio({ conteudo,mudaRenderiza }) {
       setAtivo(indice)
       console.log('ativandooo')
   }
+
+  const posiciona =(i) => {
+    posicaoElemento[i].current.scrollIntoView({behavior:"smooth",display:'relative',top:'20%'})    
+    console.log(posicaoElemento)
+  }
+
+  // const posiciona2 =() => {
+  //   // posicaoElemento2.current.scrollIntoView()    
+  //   console.log(posicaoElemento2)
+  // }
 
     return (
 
@@ -61,20 +58,20 @@ export default function Cardapio({ conteudo,mudaRenderiza }) {
       </Head>
 
 
-      <Cabecalho funcao={mudaRenderiza}/>
+      <Cabecalho_Cardapio funcao={mudaRenderiza}/>
     
       
-      <div className={styles.corpo_cardapio}>
-      <button  className={styles.botao} onClick={posiciona}>CLICA CLICA</button>
-      <NavCardapio referencia={posicaoElemento} />
+      <div  className={styles.corpo_cardapio} >
+
+      <NavCardapio  funcao={posiciona}/>
      
-      <PaginaCardapio key={1}  conteudo={conteudo}  pagina={1} posicao_a={1} posicao_b={10} titulo='Carnes' estaAtivo={estaAtivo} poeAtivo={poeAtivo} />
-      <PaginaCardapio ref={posicaoElemento} key={2} conteudo={conteudo}  pagina={2} posicao_a={12} posicao_b={28} titulo='Vegetais' estaAtivo={estaAtivo} poeAtivo={poeAtivo} />
-      <PaginaCardapio key={3} conteudo={conteudo}  pagina={3} posicao_a={12} posicao_b={28} titulo='Vegetais' estaAtivo={estaAtivo} poeAtivo={poeAtivo} />
-      <PaginaCardapio key={4} conteudo={conteudo}  pagina={4} posicao_a={12} posicao_b={28} titulo='Vegetais' estaAtivo={estaAtivo} poeAtivo={poeAtivo} />
-      <PaginaCardapio key={5} conteudo={conteudo} pagina={5} posicao_a={12} posicao_b={28} titulo='Vegetais' estaAtivo={estaAtivo} poeAtivo={poeAtivo} />
+      <PaginaCardapio  ref={posicaoElemento[0]} key={1}  conteudo={conteudo}  pagina={1} posicao_a={1} posicao_b={10} titulo='Carnes' estaAtivo={estaAtivo} poeAtivo={poeAtivo} />
+      <PaginaCardapio   ref={posicaoElemento[1]} key={2} conteudo={conteudo}  pagina={1} posicao_a={12} posicao_b={28} titulo='Vegetais' estaAtivo={estaAtivo} poeAtivo={poeAtivo} />
+      <PaginaCardapio    ref={posicaoElemento[2]} key={3} conteudo={conteudo}  pagina={3} posicao_a={12} posicao_b={28} titulo='Vegetais2' estaAtivo={estaAtivo} poeAtivo={poeAtivo} />
+      <PaginaCardapio  ref={posicaoElemento[3]} key={4} conteudo={conteudo}  pagina={4} posicao_a={12} posicao_b={28} titulo='Vegetais' estaAtivo={estaAtivo} poeAtivo={poeAtivo} />
+      <PaginaCardapio  ref={posicaoElemento[4]} key={5} conteudo={conteudo} pagina={5} posicao_a={12} posicao_b={28} titulo='Vegetais' estaAtivo={estaAtivo} poeAtivo={poeAtivo} />
       {/* <PaginaCardapio conteudo={conteudo} pagina={2}  /> */}
-      </div>
+      </div >
         
       {/* <IMGFundo /> */}
       <Rodape />

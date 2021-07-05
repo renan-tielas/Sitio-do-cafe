@@ -67,6 +67,7 @@
   
   /* font-family:League Mono Variable; */
   background-color: var(--cor-vermelho);
+  padding: 0 0.01rem ;
     min-width: 3rem;
     width: 10vw;
     min-width: 100px;
@@ -77,12 +78,12 @@
     height: var(--altura_bot);
       /* /* border-left:8px  rgb(255, 255, 255) solid; */
       /* border-right:  2px  rgb(83, 83, 83) solid;  */
-  border-radius: 1px;
+  border-radius: 0px;
     align-content: center;
     justify-content: center;
     /* text-align: center;
     text-justify: auto; */
-    margin:0 0.3rem;
+    margin:0 0rem;
     display: flex;
   align-items: center;
 
@@ -92,6 +93,21 @@
   /* text-shadow: 1px 1px 2px rgb(255, 255, 255); */
 }
 
+
+.botao_pagCardapio:hover{
+  
+  /* border-radius: 10px; */
+  /* text-shadow: 2px 2px 4px black; */
+  /* opacity: 0.9; */
+  border-radius: 0;
+  transition: 0.2s ease-out;
+  padding-bottom: 26px;
+  /* transform: scale(1.03); */
+  box-shadow: 2px 10px 10px 2px rgb(0, 0, 0);
+ 
+ 
+   /* font-family:Le */
+}
 
 .botao_pag:hover {
   background-color: var(--cor-vermelho-claro-2);

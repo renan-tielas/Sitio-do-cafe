@@ -26,68 +26,63 @@ const Item = ({ conteudo, posicao, nome, preco, preco_grande, descricao, foto, c
 
             (<div>
                 <div className={styles.item_ativo}>
-                <a className={styles.item_nome}>
-                    {/* {conteudo[posicao].comida_nome} */}
-                    {nome}
-                </a>
-                <a className={styles.item_preco_peq}>
-                    {/* {conteudo[posicao].comida_preco} */}
-                    {preco}
+                    <a className={styles.item_nome}>
+                        {/* {conteudo[posicao].comida_nome} */}
+                        {nome}
+                    </a>
+                    <a className={styles.item_preco_peq}>
+                        {/* {conteudo[posicao].comida_preco} */}
+                        {preco}
 
 
-                </a>
-                <a className={styles.item_preco_grande}>
-                    {/* {conteudo[posicao].comida_preco} */}
+                    </a>
+                    <a className={styles.item_preco_grande}>
+                        {/* {conteudo[posicao].comida_preco} */}
 
-                    {preco_grande}
+                        {preco_grande}
 
-                </a>
-                <a className={styles.item_descricao}>
-                    {/* {conteudo[posicao].comida_descricao} */}
-                    {descricao}
-                    {/* se nao houver desCRICAO MUDAR ESTILO PRA FICAR MENOR */}
-                </a>
-                <a className={styles.item_preco_grande}>
-                    {/* {conteudo[posicao].comida_preco} */}
+                    </a>
+                    <a className={styles.item_descricao}>
+                        {/* {conteudo[posicao].comida_descricao} */}
+                        {descricao}
+                        {/* se nao houver desCRICAO MUDAR ESTILO PRA FICAR MENOR */}
+                    </a>
+                    <a className={styles.item_preco_grande}>
+                        {/* {conteudo[posicao].comida_preco} */}
 
-                    Médio
+                        Médio
 
-                </a>
-                <a className={styles.item_preco_grande}>
-                    {/* {conteudo[posicao].comida_preco} */}
+                    </a>
+                    <a className={styles.item_preco_grande}>
+                        {/* {conteudo[posicao].comida_preco} */}
 
-                    Grande
+                        Grande
 
-                </a>
-               
+                    </a>
+
+                </div>
+                <Image className={styles.item_ativo_img} width={300}
+                    height='260'
+                    src={foto}
+                    crop />
             </div>
-             <Image className={styles.item_ativo_img} width={300}
-             height='260'
-             src={foto}
-             crop />
-             </div>
 
             )
             // NÃO ATIVO ABAIXO
             : (
 
-
                 categoria ? (
-
                     <h1 className={styles.item_categoria}>
                         {/* {conteudo[posicao].comida_nome} */}
                         {categoria}
                         {/* <br/> */}
                     </h1>
-
                 )
-
 
                     :
                     (descricao ? (
                         preco_grande ?
-
-                            (<div className={styles.item_grande}>
+                            (<div className={styles.item_grande} onClick={() => poeAtivo(indice)}>
                                 <a className={styles.item_nome}>
                                     {/* {conteudo[posicao].comida_nome} */}
                                     {nome}
@@ -95,14 +90,10 @@ const Item = ({ conteudo, posicao, nome, preco, preco_grande, descricao, foto, c
                                 <a className={styles.item_preco_peq}>
                                     {/* {conteudo[posicao].comida_preco} */}
                                     {preco}
-
-
                                 </a>
                                 <a className={styles.item_preco_grande}>
                                     {/* {conteudo[posicao].comida_preco} */}
-
                                     {preco_grande}
-
                                 </a>
                                 <a className={styles.item_descricao}>
                                     {/* {conteudo[posicao].comida_descricao} */}
@@ -111,15 +102,11 @@ const Item = ({ conteudo, posicao, nome, preco, preco_grande, descricao, foto, c
                                 </a>
                                 <a className={styles.item_preco_grande}>
                                     {/* {conteudo[posicao].comida_preco} */}
-
                                     Médio
-
                                 </a>
                                 <a className={styles.item_preco_grande}>
                                     {/* {conteudo[posicao].comida_preco} */}
-
                                     Grande
-
                                 </a>
 
                             </div>)
@@ -150,7 +137,7 @@ const Item = ({ conteudo, posicao, nome, preco, preco_grande, descricao, foto, c
 
 
                         (
-                            <div className={styles.item_simples}>
+                            <div className={styles.item_simples}onClick={() => poeAtivo(indice)}>
                                 <a className={styles.item_nome}>
                                     {/* {conteudo[posicao].comida_nome} */}
                                     {nome}

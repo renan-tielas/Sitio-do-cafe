@@ -3,12 +3,12 @@ import Link from 'next/link'
 // import Navegacao from './layout/Navegacao';
 
 
-const Botao_PaginaCardapio = ({texto,funcao,pagina,rota,ref}) => {
+const Botao_PaginaCardapio = ({texto,funcao}) => {
     return (
-      <button onClick={() => funcao(ref)}
+      <button onClick={funcao}
       className={styles.botao_pagCardapio} >
         {/* onClick={() => funcao(palavra)} */}
-        <a href={rota}>
+        {/* <a href={rota}> */}
           {/* nao esta funcionando a rota */}
 
        <div className={styles.botao_titulo_sobe}>
@@ -18,7 +18,7 @@ const Botao_PaginaCardapio = ({texto,funcao,pagina,rota,ref}) => {
          </div>
        
   
-      </a>
+      {/* </a> */}
       </button>
     )
     

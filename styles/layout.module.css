@@ -22,7 +22,6 @@
     /* border:2px green solid; */
 }
 
-
 .cabecalho{
   /* border:2px red solid; */
   width: 100vw;
@@ -39,6 +38,24 @@
   height: var(--altura_cab);
   position: fixed;
   z-index:2;
+ 
+}
+.cabecalho_cardapio{
+  /* border:2px red solid; */
+  /* width: 100vw; */
+  /* height:auto; */
+  /* min-height:4rem; */
+  /* border-radius: 4px; */
+  /* position: initial; */
+  /* margin-top: 1rem; */
+  display: flex;
+  /* flex-direction: column; */
+  /* height: 100vh;; */
+  background-color: var(--cor-vermelho) ;
+  /* border: 3px var(--cor-1) solid; */
+  height: var(--altura_cab);
+  /* position: fixed; */
+  z-index:20;
  
 }
 
@@ -64,14 +81,14 @@ padding-bottom: var(--espaco_baixo);;
 
 .corpo_cardapio{
   /* border:2px red solid; */
-  width: 100vw;
+  /* width: 100vw; */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   /* max-height: auto; */
   position: relative;
   background-color: rgb(235, 235, 198);   
-  top:50px;
+  /* top:50px; */
   justify-content: center;
   /* align-items:center; */
   align-content: center;

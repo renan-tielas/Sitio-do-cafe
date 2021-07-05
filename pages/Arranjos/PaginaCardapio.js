@@ -11,7 +11,7 @@ import Item from '../Componentes/Item'
 //     </button>));
 
 // {conteudo, pagina,posicao_a,posicao_b, titulo}
-const PaginaCardapio = (({key,conteudo, pagina,posicao_a,posicao_b, titulo,ref,estaAtivo, poeAtivo}) => {
+const PaginaCardapio = (({key,conteudo, posicao_a,posicao_b, titulo,estaAtivo, poeAtivo},ref) => {
     let comidas_nome=[]
     let comidas_descricao=[]
     let comidas_preco=[]
@@ -36,7 +36,7 @@ categorias[i]=conteudo[i].categoria
     return (
 
 <div ref={ref} className={styles.pagina}>
-<a id={'pag3'}>
+
 <div className={styles.conteudo_cardapio}>
 
 <div className={styles.titulo_cardapio}>
@@ -58,10 +58,12 @@ categorias[i]=conteudo[i].categoria
         })}
 
 </div>
-</a>
+
 </div>
      );
   });
   
-  export default  (PaginaCardapio);
+
+  const forwardedPag=React.forwardRef(PaginaCardapio)
+  export default  (forwardedPag);
 
