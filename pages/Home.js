@@ -63,7 +63,7 @@ let posicaoElemento = useRef('nulo')
         <div  ref={posicaoElemento} className={styles.corpo}>
           <Carrossel   conteudo={conteudo} />
  
-          <Comidas/>
+          {/* <Comidas/> */}
         
         {/* <div className={styles.div_espaço}></div> */}
   

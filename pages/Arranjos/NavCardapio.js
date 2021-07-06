@@ -6,7 +6,7 @@ import Botao_PaginaCardapio from '../Componentes/Botao_PaginaCardapio';
 const NavCardapio = ({funcao}) => {
 
 
-  const textos_botoes = ["Carnes","Vegetais","Guarnições","Saladas","Bebidas","Sobremesa","Bebidas Alcoólicas","Pratos Executivos","Pratos para 2 e 3"]
+  const textos_botoes = ["Carnes","Guarnições","Saladas","Bebidas e Sobremesa","Bebidas Alcoólicas","Pratos Executivos","Pratos para 2 e 3"]
 
     return (
    

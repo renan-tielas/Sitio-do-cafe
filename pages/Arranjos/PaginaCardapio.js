@@ -20,7 +20,7 @@ const PaginaCardapio = (({key,conteudo, posicao_a,posicao_b, titulo,estaAtivo, p
     let numeros=[]
     let categorias=[]
 
-for (let i = posicao_a; i < posicao_b+1; i++) {
+for (let i = posicao_a; i < posicao_b; i++) {
     numeros[i]=[i]
 comidas_nome[i]=conteudo[i].comida_nome
 comidas_descricao[i]=conteudo[i].comida_descricao

@@ -64,12 +64,12 @@ export default function Cardapio({ conteudo,mudaRenderiza }) {
       <div  className={styles.corpo_cardapio} >
 
       <NavCardapio  funcao={posiciona}/>
-     
-      <PaginaCardapio  ref={posicaoElemento[0]} key={1}  conteudo={conteudo}  pagina={1} posicao_a={1} posicao_b={10} titulo='Carnes' estaAtivo={estaAtivo} poeAtivo={poeAtivo} />
-      <PaginaCardapio   ref={posicaoElemento[1]} key={2} conteudo={conteudo}  pagina={1} posicao_a={12} posicao_b={28} titulo='Vegetais' estaAtivo={estaAtivo} poeAtivo={poeAtivo} />
-      <PaginaCardapio    ref={posicaoElemento[2]} key={3} conteudo={conteudo}  pagina={3} posicao_a={12} posicao_b={28} titulo='Vegetais2' estaAtivo={estaAtivo} poeAtivo={poeAtivo} />
-      <PaginaCardapio  ref={posicaoElemento[3]} key={4} conteudo={conteudo}  pagina={4} posicao_a={12} posicao_b={28} titulo='Vegetais' estaAtivo={estaAtivo} poeAtivo={poeAtivo} />
-      <PaginaCardapio  ref={posicaoElemento[4]} key={5} conteudo={conteudo} pagina={5} posicao_a={12} posicao_b={28} titulo='Vegetais' estaAtivo={estaAtivo} poeAtivo={poeAtivo} />
+     {/* automatizar titulo! */}
+      <PaginaCardapio  ref={posicaoElemento[0]} key={1} conteudo={conteudo}  pagina={1} posicao_a={1} posicao_b={11} titulo='Carnes' estaAtivo={estaAtivo} poeAtivo={poeAtivo} />
+      <PaginaCardapio  ref={posicaoElemento[1]} key={2} conteudo={conteudo}  pagina={1} posicao_a={12} posicao_b={29} titulo='Vegetais' estaAtivo={estaAtivo} poeAtivo={poeAtivo} />
+      <PaginaCardapio  ref={posicaoElemento[2]} key={3} conteudo={conteudo}  pagina={3} posicao_a={30} posicao_b={44} titulo='Saladas' estaAtivo={estaAtivo} poeAtivo={poeAtivo} />
+      <PaginaCardapio  ref={posicaoElemento[3]} key={4} conteudo={conteudo}  pagina={4} posicao_a={45} posicao_b={56} titulo='Bebidas' estaAtivo={estaAtivo} poeAtivo={poeAtivo} />
+      <PaginaCardapio  ref={posicaoElemento[4]} key={5} conteudo={conteudo}  pagina={5} posicao_a={57} posicao_b={68} titulo='Cervejas' estaAtivo={estaAtivo} poeAtivo={poeAtivo} />
       {/* <PaginaCardapio conteudo={conteudo} pagina={2}  /> */}
       </div >
         

@@ -11,17 +11,17 @@ const Rodape = () => {
       <footer className={styles.rodape}>
 
        
-<Navegacao_rod/>
+
         
 <div className='inline'>
-        <a
+        {/* <a
           href="https://facebook.com/sitiodocafe"
           target="_blank"
           rel="noopener noreferrer"
         >
           
          
-        </a>
+        </a> */}
 
 
         <Image className={styles.img_rodape }
@@ -34,7 +34,7 @@ const Rodape = () => {
      
       // objectPosition='10% 70%'
       />
-        
+        <Navegacao_rod/>
         
 Quick Galetos
         </div>

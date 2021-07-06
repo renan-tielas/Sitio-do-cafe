@@ -13,7 +13,7 @@
     /* height: var(--altura_cab); */
   
     /* top: 8rem; */
-  z-index: 30;
+    z-index: 30;
     background: var(--cor-vermelho);
     border-radius: 3px;
     display: flex;
@@ -115,7 +115,7 @@
   
     top: 0rem;
     align-self: center;   
-    justify-content: space-around;
+    justify-content: left;
     background: var(--cor-vermelho);
     border-radius: 3px;
     display: flex;
