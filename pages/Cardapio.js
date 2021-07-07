@@ -70,6 +70,8 @@ export default function Cardapio({ conteudo,mudaRenderiza }) {
       <PaginaCardapio  ref={posicaoElemento[2]} key={3} conteudo={conteudo}  pagina={3} posicao_a={30} posicao_b={44} titulo='Saladas' estaAtivo={estaAtivo} poeAtivo={poeAtivo} />
       <PaginaCardapio  ref={posicaoElemento[3]} key={4} conteudo={conteudo}  pagina={4} posicao_a={45} posicao_b={56} titulo='Bebidas' estaAtivo={estaAtivo} poeAtivo={poeAtivo} />
       <PaginaCardapio  ref={posicaoElemento[4]} key={5} conteudo={conteudo}  pagina={5} posicao_a={57} posicao_b={68} titulo='Cervejas' estaAtivo={estaAtivo} poeAtivo={poeAtivo} />
+      <PaginaCardapio  ref={posicaoElemento[5]} key={6} conteudo={conteudo}  pagina={6} posicao_a={69} posicao_b={82} titulo='Pratos Executivos' estaAtivo={estaAtivo} poeAtivo={poeAtivo} />
+      <PaginaCardapio  ref={posicaoElemento[6]} key={7} conteudo={conteudo}  pagina={7} posicao_a={83} posicao_b={91} titulo='Pratos para 2 pessoas' estaAtivo={estaAtivo} poeAtivo={poeAtivo} />
       {/* <PaginaCardapio conteudo={conteudo} pagina={2}  /> */}
       </div >
         

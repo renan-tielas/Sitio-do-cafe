@@ -41,7 +41,7 @@
 
   .navegacao_rod{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     position: relative;
     height: var(--altura_bot);
     margin-top: 0.75rem;

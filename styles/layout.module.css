@@ -37,7 +37,7 @@
  
 }
 .cabecalho_cardapio{
-  width: 100vw;
+  /* width: 100vw; */
   display: flex;
   /* flex-direction: column; */
   /* height: 100vh;; */
@@ -96,13 +96,14 @@ padding-bottom: var(--espaco_baixo);;
 }
 
 .img_rodape{
-  /* object-fit: cover; */
+  object-fit: cover;
   /* border-radius: var(--radius-peq); */
   position: relative;
   justify-content: left;
   align-self: initial;
   top:2rem;
   left: 50%;
+  /* width: 300px; */
   padding: 20rem;
   /* z-index: 3; */
   /* background-color: yellow; */
@@ -116,14 +117,23 @@ padding-bottom: var(--espaco_baixo);;
   color: white;
   /* height: 15vh; */
   border-top: 1px solid #eaeaea;
-  display: block;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  /* display: block;
+  display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: center; */
+  /* align-items: center; */
   border:  var(--cor-3) 2px solid;
   background-color: var(--cor-3);
-  position: relative;
+  /* position: relative; */
+  width: 100%;
+  /* border:2px green solid; */
+  display: grid; 
+  grid-template-columns: 1.2fr 0.9fr 0.9fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . ."; 
+    /* overflow: hidden; */
 }
 
 
@@ -161,6 +171,16 @@ padding-bottom: var(--espaco_baixo);;
 @media (max-width: 700px) {
 
   .cabecalho{
+ 
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh;; */
+    height: 6rem;
+    position: relative;
+    z-index:2;
+   
+  }
+  .cabecalho_cardapio{
  
     display: flex;
     flex-direction: column;

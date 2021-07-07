@@ -7,11 +7,17 @@ const Texto = ({conteudo}) => {
     return (
 
 <p className={styles.texto_grande}>
-<div className={styles.titulo_texto_grande}>
+{/* <div className={styles.titulo_texto_grande}>
 Poema
-</div>
+</div> */}
 
-As plantas recebem água e nutrientes do solo, fornecendo em troca matéria orgânica morta e excreções radiculares que alimentam a vida do solo. Esta, por sua vez, na decomposição produz agregantes como ácidos poliurônicos que permitem a formação de poros no solo por onde entra ar e água. Mas estes ácidos poliurônicos também são o alimento principal de fixadores de nitrogênio livres, enriquecendo o solo com nitrogênio. Como a matéria orgânica é o alimento da maior parte da vida do solo, sua diversificação é importante. Em monoculturas se beneficiam somente poucas espécies
+Restaurante e Galeteria tradicional em Copacabana, desde 1975.
+Servimos o galeto mais bem temperado do Rio de Janeiro, assado na brasa na sua frente!
+<br/><br/>
+Também assamos deliciosas Carnes e Vegetais na nossa churrasqueira, além das guarnições de nossa cozinha.
+<br/><br/>
+Venha provar, ou peça em casa!
+
 </p>
     //    {/* <Conteudo_texto texto={conteudo.texto} posicao={0} /> */}
 
