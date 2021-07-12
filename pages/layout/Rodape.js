@@ -19,11 +19,11 @@ const Rodape = () => {
       height='auto'
       width='100px'
       maxWidth='100px'
-     
       // objectPosition='10% 70%'
       />
+
       <Texto/>
-        <Navegacao_rod/>
+      <Navegacao_rod/>
         
 {/* Quick Galetos */}
 
