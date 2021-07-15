@@ -23,7 +23,7 @@ const Cartao = ({texto,posicao,conteudo}) => {
         src={conteudo[posicao].imagem}
         alt="descrição"
         // width='auto'
-        width={550}
+        width={650}
         crop
         // maxWidth={350}
         height={550}  

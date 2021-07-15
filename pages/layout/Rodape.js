@@ -11,19 +11,28 @@ const Rodape = () => {
       
       <footer className={styles.rodape}>
   
-
-      <Image className={styles.img_rodape}
+      {/* <div className={styles.img_rodape}></div> */}
+      <div className={styles.img_rodape}>
+      <Image  
       src='/fachada.jpg'
-      alt="descrição"
-    
+      alt="descrição" 
       height='auto'
       width='100px'
       maxWidth='100px'
-      // objectPosition='10% 70%'
-      />
-
+      margin={200}
+      objectFit='cover'
+      // height='400px'
+      // layout= "responsive"
+      
+      height={320*0.95}
+      width={600*0.95}
+      // maxWidth='100px'
+     
+      objectPosition='90% 68%'
+      /> ""
+      </div>
       <Texto/>
-      <Navegacao_rod/>
+        <Navegacao_rod/>
         
 {/* Quick Galetos */}
 

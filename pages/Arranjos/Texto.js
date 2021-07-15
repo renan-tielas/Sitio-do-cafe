@@ -12,12 +12,13 @@ Poema
 </div> */}
 
 Restaurante e Galeteria tradicional em Copacabana, desde 1975.
-Servimos o galeto mais bem temperado do Rio de Janeiro, assado na brasa na sua frente!
+Servimos o galeto mais bem temperado do Rio de Janeiro, assado na brasa!
 <br/><br/>
-Também assamos deliciosas Carnes e Vegetais na nossa churrasqueira, além das guarnições de nossa cozinha.
+Preparamos também carnes e vegetais na nossa churrasqueira. Servimos as deliciosas guarnições de nossa cozinha, e um pudim artesanal que você nunca comeu igual!
 <br/><br/>
 Venha provar, ou peça em casa!
-
+<br/><br/><br/><br/><br/><br/>
+Quick Galetos - Rua Duvivier, 28a, Copacabana - Rio de Janeiro
 </p>
     //    {/* <Conteudo_texto texto={conteudo.texto} posicao={0} /> */}
 

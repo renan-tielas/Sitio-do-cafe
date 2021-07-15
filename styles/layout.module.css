@@ -96,18 +96,23 @@ padding-bottom: var(--espaco_baixo);;
 }
 
 .img_rodape{
-  object-fit: cover;
+  /* object-fit: cover; */
   /* border-radius: var(--radius-peq); */
-  position: relative;
-  justify-content: left;
-  align-self: initial;
-  top:2rem;
-  left: 50%;
-  /* width: 300px; */
-  padding: 20rem;
+  /* width:  600px; */
+  /* position: relative; */
+  /* justify-content: left; */
+  /* margin:2rem; */
+  /* align-self: initial; */
+  /* top:2rem; */
+  /* left: 50%; */
+  /* width: 400px; */
+  /* padding: 20rem; */
   /* z-index: 3; */
+  padding-left: 2rem;
+  padding-top: 1.5rem;
   /* background-color: yellow; */
-  border:4px forestgreen solid;
+  border: 1px forestgreen solid;
+
 }
 
 

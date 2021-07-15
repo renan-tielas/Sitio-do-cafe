@@ -74,7 +74,7 @@ let posicaoElemento = useRef('nulo')
   </div>
 
 {/* </Link> */}
-        <IMGFundo />
+        {/* <IMGFundo /> */}
         <Rodape />
   
   

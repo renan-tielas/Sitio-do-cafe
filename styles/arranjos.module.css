@@ -73,6 +73,8 @@
   .texto_grande{
     padding:1rem 2rem;
     top:6rem;
+    width: 36rem;
+    font-weight: 600;
   }
 
   .titulo_texto_grande{

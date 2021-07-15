@@ -250,7 +250,10 @@ align-items: center;
 
 .cartao_3_img{
   object-fit: cover;
-  border-radius: var(--radius-peq);
+  position: relative;
+  top:0.92rem;
+  border-bottom-left-radius: var(--radius-peq);
+  border-bottom-right-radius: var(--radius-peq);
     /* box-shadow:  0 10px 15px 5px rgba(0,0,0,0.75); */
 }
 .conteudo_cartao_3{
@@ -467,6 +470,7 @@ font-weight: 800;
   object-fit: cover;
   border-radius: var(--radius-peq);
   justify-self: center;
+  /* width: 200px; */
   display: absolute;
   left:6rem;
 }
