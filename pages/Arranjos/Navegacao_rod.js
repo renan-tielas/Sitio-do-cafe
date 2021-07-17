@@ -8,10 +8,9 @@ const Navegacao_rod = () => {
       <div className={styles.navegacao_rod}>
        <Botao_rod texto='Facebook'/>
        <Botao_rod texto='Instagram'/>
-       <Botao_rod texto='Ifood'/>
-       <Botao_rod texto='Uber Eats'/>
-       <Botao_rod texto='Rappi'/>
-       <Botao_rod texto='James'/>
+       <Botao_rod texto='Entregas por terceiros'/>
+       <Botao_rod texto='Trip Advisor'/>
+       
        {/* <Botao_rod texto='Contatos'/> */}
       </div>
     );

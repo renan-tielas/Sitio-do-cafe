@@ -32,7 +32,9 @@ const Item = ({ conteudo, posicao, nome, preco, preco_grande, descricao, foto, c
                     (preco_grande ? (
                         descricao ?
                             // Preço grande com descrição - ativo
-                            (<div className={styles.item_grande} onClick={() => poeAtivo(indice)}>
+                            
+                            (<div className={styles.item_container}>
+                                <div className={styles.item_grande_descricao_ativo} onClick={() => poeAtivo(indice)}>
                                 <a className={styles.item_nome}>
                                     {/* {conteudo[posicao].comida_nome} */}
                                     {nome}
@@ -58,111 +60,119 @@ const Item = ({ conteudo, posicao, nome, preco, preco_grande, descricao, foto, c
                                     {/* {conteudo[posicao].comida_preco} */}
                                     Grande
                                 </a>
+                                </div>
                                 <Image className={styles.item_ativo_img} width={300}
                                     height='260'
                                     width='300'
                                     src={foto}
+                                    
                                     crop />
-                            </div>)
+                                    </div>
+                            
+                            )
                             // Preço grande sem descrição - ativo
                             : (
 
+                                <div className={styles.item_container}>
+                                    <div className={styles.item_grande_ativo} onClick={() => poeAtivo(indice)}>
+                                        <a className={styles.item_nome}>
+                                            {/* {conteudo[posicao].comida_nome} */}
+                                            {nome}
+                                        </a>
+                                        <a className={styles.item_preco_peq}>
+                                            {/* {conteudo[posicao].comida_preco} */}
+                                            {preco}
+                                        </a>
+                                        <a className={styles.item_preco_grande}>
+                                            {/* {conteudo[posicao].comida_preco} */}
+                                            {preco_grande}
+                                        </a>
+                                        <a className={styles.item_descricao}>
+                                            {/* {conteudo[posicao].comida_descricao} */}
+                                            {/* {descricao} */}
+                                            {/* se nao houver desCRICAO MUDAR ESTILO PRA FICAR MENOR */}
+                                        </a>
+                                        <a className={styles.item_preco_grande}>
+                                            {/* {conteudo[posicao].comida_preco} */}
+                                            Médio
+                                        </a>
+                                        <a className={styles.item_preco_grande}>
+                                            {/* {conteudo[posicao].comida_preco} */}
+                                            Grande
+                                        </a>
 
-                                <div className={styles.item_grande} onClick={() => poeAtivo(indice)}>
+
+                                    </div>
+                                    <Image className={styles.item_ativo_img} width={300}
+                                        height='260'
+                                        width='300'
+                                        src={foto}
+                                        crop />
+                                </div>
+
+
+                            )
+                    )
+
+                        :
+
+
+                        (descricao ?
+                            // Sem preço grande com descrção - ativo
+                            (<div className={styles.item_container}>
+                                <div className={styles.item_simples_descricao_ativo} onClick={() => poeAtivo(indice)}>
                                     <a className={styles.item_nome}>
                                         {/* {conteudo[posicao].comida_nome} */}
                                         {nome}
                                     </a>
-                                    <a className={styles.item_preco_peq}>
+                                    <a className={styles.item_preco}>
                                         {/* {conteudo[posicao].comida_preco} */}
                                         {preco}
                                     </a>
-                                    <a className={styles.item_preco_grande}>
+                                    <a className={styles.item_descricao}>
+                                        {/* {conteudo[posicao].comida_descricao} */}
+                                        {descricao}
+                                        {/* se nao houver desCRICAO MUDAR ESTILO PRA FICAR MENOR */}
+                                    </a>
+                                    </div>
+                                    <Image className={styles.item_ativo_img} width={300}
+                                        height='260'
+                                        width='300'
+                                        src={foto}
+                                        marginRight='200'
+                                    />
+                                </div>)
+                            :
+                            // Sem preço grande sem descrção - ativo
+                            (<div className={styles.item_container}>
+                                <div className={styles.item_simples_ativo} onClick={() => poeAtivo(indice)}>
+                                    <a className={styles.item_nome}>
+                                        {/* {conteudo[posicao].comida_nome} */}
+                                        {nome}
+                                    </a>
+                                    <a className={styles.item_preco}>
                                         {/* {conteudo[posicao].comida_preco} */}
-                                        {preco_grande}
+                                        {preco}
                                     </a>
                                     <a className={styles.item_descricao}>
                                         {/* {conteudo[posicao].comida_descricao} */}
                                         {/* {descricao} */}
                                         {/* se nao houver desCRICAO MUDAR ESTILO PRA FICAR MENOR */}
                                     </a>
-                                    <a className={styles.item_preco_grande}>
-                                        {/* {conteudo[posicao].comida_preco} */}
-                                        Médio
-                                    </a>
-                                    <a className={styles.item_preco_grande}>
-                                        {/* {conteudo[posicao].comida_preco} */}
-                                        Grande
-                                    </a>
-
+                                   
+                                    </div>
                                     <Image className={styles.item_ativo_img} width={300}
-                                    height='260'
-                                    width='300'
-                                    src={foto}
-                                    crop />
+                                        height='260'
+                                        width='300'
+                                        src={foto}
+                                    />
+                                
                                 </div>
-
-
-                            )
+                            ))
                     )
-                       
-                        :
-                         
+                )
+            )
 
-                        (descricao?
-                        // Sem preço grande com descrção - ativo
-                        (
-                            <div className={styles.item_simples_descricao_ativo} onClick={() => poeAtivo(indice)}>
-                                <a className={styles.item_nome}>
-                                    {/* {conteudo[posicao].comida_nome} */}
-                                    {nome}
-                                </a>
-                                <a className={styles.item_preco}>
-                                    {/* {conteudo[posicao].comida_preco} */}
-                                    {preco}
-                                </a>
-                                <a className={styles.item_descricao}>
-                                    {/* {conteudo[posicao].comida_descricao} */}
-                                    {descricao}
-                                    {/* se nao houver desCRICAO MUDAR ESTILO PRA FICAR MENOR */}
-                                </a>
-                                <div></div>
-                                <Image className={styles.item_ativo_img} width={300}
-                                    height='260'
-                                    width='200'
-                                    src={foto}
-                                    marginRight='200'
-                                    />
-                            </div>)
-                                :
-                                // Sem preço grande sem descrção - ativo
-(
-                                <div className={styles.item_simples_ativo} onClick={() => poeAtivo(indice)}>
-                                <a className={styles.item_nome}>
-                                    {/* {conteudo[posicao].comida_nome} */}
-                                    {nome}
-                                </a>
-                                <a className={styles.item_preco}>
-                                    {/* {conteudo[posicao].comida_preco} */}
-                                    {preco}
-                                </a>
-                                <a className={styles.item_descricao}>
-                                    {/* {conteudo[posicao].comida_descricao} */}
-                                    {/* {descricao} */}
-                                    {/* se nao houver desCRICAO MUDAR ESTILO PRA FICAR MENOR */}
-                                </a>
-                                <div></div>
-                                <Image className={styles.item_ativo_img} width={300}
-                                    height='260'
-                                    width='200'
-                                    src={foto}
-                                    />
-                            </div>
-))
-                            )
-                        )
-                    )
-            
 
             // NÃO ATIVO ABAIXO____
             : (
@@ -245,48 +255,48 @@ const Item = ({ conteudo, posicao, nome, preco, preco_grande, descricao, foto, c
                     )
                         // Sem preço grande
                         :
-                        descricao?
-                        // Sem preço grande com descrção - ativo
-                        (
-                            <div className={styles.item_simples_descricao} onClick={() => poeAtivo(indice)}>
-                                <a className={styles.item_nome}>
-                                    {/* {conteudo[posicao].comida_nome} */}
-                                    {nome}
-                                </a>
-                                <a className={styles.item_preco}>
-                                    {/* {conteudo[posicao].comida_preco} */}
-                                    {preco}
-                                </a>
-                                <a className={styles.item_descricao}>
-                                    {/* {conteudo[posicao].comida_descricao} */}
-                                    {descricao}
-                                    {/* se nao houver desCRICAO MUDAR ESTILO PRA FICAR MENOR */}
-                                </a>
-                                
-                                
-                            </div>)
-                                :
-                                // Sem preço grande sem descrção - ativo
-(
+                        descricao ?
+                            // Sem preço grande com descrição
+                            (
+                                <div className={styles.item_simples_descricao} onClick={() => poeAtivo(indice)}>
+                                    <a className={styles.item_nome}>
+                                        {/* {conteudo[posicao].comida_nome} */}
+                                        {nome}
+                                    </a>
+                                    <a className={styles.item_preco}>
+                                        {/* {conteudo[posicao].comida_preco} */}
+                                        {preco}
+                                    </a>
+                                    <a className={styles.item_descricao}>
+                                        {/* {conteudo[posicao].comida_descricao} */}
+                                        {descricao}
+                                        {/* se nao houver desCRICAO MUDAR ESTILO PRA FICAR MENOR */}
+                                    </a>
+
+
+                                </div>)
+                            :
+                            // Sem preço grande sem descrção 
+                            (
                                 <div className={styles.item_simples} onClick={() => poeAtivo(indice)}>
-                                <a className={styles.item_nome}>
-                                    {/* {conteudo[posicao].comida_nome} */}
-                                    {nome}
-                                </a>
-                                <a className={styles.item_preco}>
-                                    {/* {conteudo[posicao].comida_preco} */}
-                                    {preco}
-                                </a>
-                                <a className={styles.item_descricao}>
-                                    {/* {conteudo[posicao].comida_descricao} */}
-                                    {/* {descricao} */}
-                                    {/* se nao houver desCRICAO MUDAR ESTILO PRA FICAR MENOR */}
-                                </a>
-                                <div></div>
-                                
-                            </div>
-))
-                    ));
+                                    <a className={styles.item_nome}>
+                                        {/* {conteudo[posicao].comida_nome} */}
+                                        {nome}
+                                    </a>
+                                    <a className={styles.item_preco}>
+                                        {/* {conteudo[posicao].comida_preco} */}
+                                        {preco}
+                                    </a>
+                                    <a className={styles.item_descricao}>
+                                        {/* {conteudo[posicao].comida_descricao} */}
+                                        {/* {descricao} */}
+                                        {/* se nao houver desCRICAO MUDAR ESTILO PRA FICAR MENOR */}
+                                    </a>
+                                    <div></div>
+
+                                </div>
+                            ))
+            ));
 
 
 

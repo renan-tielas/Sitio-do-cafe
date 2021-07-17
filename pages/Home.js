@@ -15,8 +15,16 @@ import Comidas from './Arranjos/Comidas';
 
 import { useState } from 'react';
 import Cardapio from './Cardapio';
+import Entregas from './Entregas';
 import Botao_ref from './Componentes/Botao_ref';
 import {useRef} from 'react'
+
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile
+} from "react-device-detect";
 
 
 
@@ -60,7 +68,7 @@ let posicaoElemento = useRef('nulo')
   
         <Cabecalho id='foo'funcao={mudaRenderiza}/>
   
-        <div  ref={posicaoElemento} className={styles.corpo}>
+        <div   className={styles.corpo}>
           <Carrossel   conteudo={conteudo} />
  
           {/* <Comidas/> */}
@@ -84,8 +92,12 @@ let posicaoElemento = useRef('nulo')
   if (renderiza=='cardapio') {
     // return   <div>dasdasd</div>
     
-    return  <Cardapio conteudo={conteudo} mudaRenderiza={mudaRenderiza}>fsdfsd</Cardapio>
+    return  <Cardapio conteudo={conteudo} mudaRenderiza={mudaRenderiza}></Cardapio>
   }
-
+  if (renderiza=='entregas') {
+    // return   <div>dasdasd</div>
+    
+    return  <Entregas conteudo={conteudo} mudaRenderiza={mudaRenderiza}>fsdfsd</Entregas>
+  }
 
 }
