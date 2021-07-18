@@ -1,4 +1,4 @@
-import styles from '../../styles/arranjos.module.css'
+import styles from '../../styles/componentes.module.css'
 
 // import Conteudo_texto from './Conteudo_texto';
 // import Divisoria from './Divisoria'

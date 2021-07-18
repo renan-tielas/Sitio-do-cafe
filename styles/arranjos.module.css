@@ -75,26 +75,6 @@
   }
 
 
-  .texto_grande{
-    padding:1rem 2rem;
-    position: relative;
-    text-align: justify;
-    top: 0.5rem;
-    left:3rem;
-    width: 36rem;
-    font-weight: 600;
-  }
-
-  .titulo_texto_grande{
-    font-size: 1.6rem;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-    /* border:1px rgb(59, 34, 5) solid; */
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    /* color:var(--cor-3); */
-  }
-
   
   .titulo_cardapio{
     font-size: 1.6rem;
@@ -138,6 +118,7 @@
 .pagina{
   margin-top: 4rem;
   margin-bottom: 4rem;
+  border-radius: 6px;
 width: 80vw ;
 max-width: 750px;
 /* position: relative; */

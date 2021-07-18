@@ -178,6 +178,7 @@ const Item = ({ conteudo, posicao, nome, preco, preco_grande, descricao, foto, c
             : (
 
                 categoria ? (
+
                     <h1 className={styles.item_categoria}>
                         {/* {conteudo[posicao].comida_nome} */}
                         {categoria}
@@ -189,7 +190,9 @@ const Item = ({ conteudo, posicao, nome, preco, preco_grande, descricao, foto, c
                     (preco_grande ? (
                         descricao ?
                             // Preço grande com descrição
-                            (<div className={styles.item_grande} onClick={() => poeAtivo(indice)}>
+                            (
+                            <div  className={styles.item_sombra}>
+                            <div className={styles.item_grande} onClick={() => poeAtivo(indice)}>
                                 <a className={styles.item_nome}>
                                     {/* {conteudo[posicao].comida_nome} */}
                                     {nome}
@@ -216,11 +219,11 @@ const Item = ({ conteudo, posicao, nome, preco, preco_grande, descricao, foto, c
                                     Grande
                                 </a>
 
-                            </div>)
+                            </div></div>)
                             // Preço grande sem descrição
                             : (
 
-
+<div  className={styles.item_sombra}>
                                 <div className={styles.item_grande} onClick={() => poeAtivo(indice)}>
                                     <a className={styles.item_nome}>
                                         {/* {conteudo[posicao].comida_nome} */}
@@ -249,7 +252,7 @@ const Item = ({ conteudo, posicao, nome, preco, preco_grande, descricao, foto, c
                                     </a>
 
                                 </div>
-
+                                </div>
 
                             )
                     )
@@ -258,6 +261,7 @@ const Item = ({ conteudo, posicao, nome, preco, preco_grande, descricao, foto, c
                         descricao ?
                             // Sem preço grande com descrição
                             (
+<div  className={styles.item_sombra}>
                                 <div className={styles.item_simples_descricao} onClick={() => poeAtivo(indice)}>
                                     <a className={styles.item_nome}>
                                         {/* {conteudo[posicao].comida_nome} */}
@@ -273,11 +277,11 @@ const Item = ({ conteudo, posicao, nome, preco, preco_grande, descricao, foto, c
                                         {/* se nao houver desCRICAO MUDAR ESTILO PRA FICAR MENOR */}
                                     </a>
 
-
+                                    </div>
                                 </div>)
                             :
                             // Sem preço grande sem descrção 
-                            (
+                            (<div  className={styles.item_sombra}>
                                 <div className={styles.item_simples} onClick={() => poeAtivo(indice)}>
                                     <a className={styles.item_nome}>
                                         {/* {conteudo[posicao].comida_nome} */}
@@ -294,7 +298,7 @@ const Item = ({ conteudo, posicao, nome, preco, preco_grande, descricao, foto, c
                                     </a>
                                     <div></div>
 
-                                </div>
+                                </div></div>
                             ))
             ));
 

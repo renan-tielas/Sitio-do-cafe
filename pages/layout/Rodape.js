@@ -3,7 +3,7 @@ import styles from '../../styles/layout.module.css'
 import Divisoria from '../Componentes/Divisoria';
 import Navegacao_rod from '../Arranjos/Navegacao_rod';
 import Image from 'next/dist/client/image';
-import Texto from '../Arranjos/Texto';
+import Texto from '../Componentes/Texto';
 // import Navegacao from './layout/Navegacao';
 
 

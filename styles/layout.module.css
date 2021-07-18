@@ -69,6 +69,24 @@ border-color: red solid 4px;
 padding-bottom: var(--espaco_baixo);;
 }
 
+.corpo_entregas{
+  /* border:2px red solid; */
+  /* width: 100vw; */
+  display: flex;
+  height: 40rem;  
+  flex-direction: row;
+  /* min-height: 100vh; */
+  /* max-height: auto; */
+  position: relative;
+  top:60px;
+  /* background-color: var(--cor-fundo-2); */
+  justify-content: center;
+  align-items:center;
+  /* align-content: center; */
+border-color: red solid 4px;
+padding-bottom: var(--espaco_baixo);;
+}
+
 .corpo_cardapio{
   /* border:2px red solid; */
   /* width: 100vw; */

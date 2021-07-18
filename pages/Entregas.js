@@ -4,11 +4,18 @@ import Head from 'next/head'
 
 
 
-import Cabecalho_Cardapio from './layout/Cabecalho_Cardapio';
-
+import Cabecalho from './layout/Cabecalho';
+import Rodape from './layout/Rodape';
+import TextoEntregas from './Componentes/TextoEntregas';
 import { useRef } from 'react';
 import { useState } from 'react';
 export default function Cardapio({ conteudo,mudaRenderiza }) {
+
+
+  const horarios =[' das 12 às 17h',' das 12 às 22h',' das 12 às 20h',]
+  const textos = ['Fazemos entregas em Copacabana, Ipanema, Botafogo, Humaitá e Urca','Nosso horário de entrega é:' ]
+  const textos_2 = ['Contatos','Nosso horário de entrega é:' ]
+  // const texto
 
 
     return (
@@ -25,12 +32,12 @@ export default function Cardapio({ conteudo,mudaRenderiza }) {
       <Cabecalho funcao={mudaRenderiza}/>
     
       
-      <div  className={styles.corpo} >
-
-
+      <div  className={styles.corpo_entregas} >
+      <TextoEntregas texto={['ababa']}/>
+      <TextoEntregas texto={['ababa']}/>
       </div >
         
-      {/* <IMGFundo /> */}
+      {/*  */}
       <Rodape />
 
 
