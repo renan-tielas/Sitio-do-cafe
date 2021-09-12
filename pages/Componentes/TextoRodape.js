@@ -6,7 +6,7 @@ import styles from '../../styles/componentes.module.css'
 const Texto = ({conteudo}) => {
     return (
 
-<p className={styles.texto_grande}>
+<p className={styles.texto_grande_rodape}>
 {/* <div className={styles.titulo_texto_grande}>
 Poema
 </div> */}

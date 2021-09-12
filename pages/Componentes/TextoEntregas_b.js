@@ -3,11 +3,12 @@ import styles from '../../styles/componentes.module.css'
 // import Conteudo_texto from './Conteudo_texto';
 // import Divisoria from './Divisoria'
 
-const TextoEntregas = ({conteudo}) => {
+const TextoEntregas_b = ({conteudo}) => {
     
     return (
 
-<article className={styles.texto_entregas}>
+<article className={styles.texto_entregas_b}>
+    
 {/* <div className={styles.titulo_texto_grande}>
 Poema
 </div> */}
@@ -15,15 +16,14 @@ Poema
 {/* {textos[0]} */}
 
 {/* {textos[1]} */}
-Horários:
+Entregamos na praia, com retirada no calçadão!
+Pra quando estiver tomando aquele bronze e não quiser sair da praia pra comer bem ;)
 <br/><br/>
-<br/>
-Domingo à Terça - 12h as 17h
+<br/><br/>
+Aceitamos também os cartões de alimentação: Alelo, VR.
 {/* {horarios[0]} */}
 <br/><br/>
-<br/>
-Quarta à Sábado - - 12h as 20h
-Peça pelo telefone 2541-2897
+
 {/* {horarios[2]} */}
 <br/>
 
@@ -35,4 +35,4 @@ Peça pelo telefone 2541-2897
     );
   };
   
-  export default TextoEntregas;
+  export default TextoEntregas_b;

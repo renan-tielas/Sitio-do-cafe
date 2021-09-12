@@ -19,7 +19,7 @@
   background-color: var(--cor-fundo);
   /* background-color: #cc4242; */
   /* float: inline-start; */
-    /* border:2px green solid; */
+    /* border:8px green solid; */
 }
 
 .cabecalho{
@@ -73,18 +73,24 @@ padding-bottom: var(--espaco_baixo);;
   /* border:2px red solid; */
   /* width: 100vw; */
   display: flex;
-  height: 40rem;  
-  flex-direction: row;
+  /* height: 40rem;   */
   /* min-height: 100vh; */
-  /* max-height: auto; */
+ 
+  flex-direction: row;
+  min-height: 25rem;
+
   position: relative;
-  top:60px;
-  /* background-color: var(--cor-fundo-2); */
-  justify-content: center;
+  top:80px;
+  z-index: 100;
   align-items:center;
-  /* align-content: center; */
+  justify-content: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  align-content: center;
 border-color: red solid 4px;
+/* overflow-y:auto; */
 padding-bottom: var(--espaco_baixo);;
+padding: 0 2rem ;
 }
 
 .corpo_cardapio{
@@ -115,7 +121,9 @@ padding-bottom: var(--espaco_baixo);;
 
 .img_rodape{
   /* object-fit: cover; */
-  border-radius: 100px;
+  border-radius: 12px;
+  /* border: hotpink solid 2px; */
+  overflow:hidden;
   /* width:  600px; */
   /* position: relative; */
   /* justify-content: left; */
@@ -123,11 +131,13 @@ padding-bottom: var(--espaco_baixo);;
   /* align-self: initial; */
   /* top:2rem; */
   /* left: 50%; */
-  min-width: 400px;
+  
+  height:304px;
+          min-width:332px;
   /* padding: 20rem; */
   /* z-index: 3; */
-  padding-left: 2rem;
-  padding-top: 2rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
   
   /* background-color: yellow; */
   /* border: 1px forestgreen solid; */
@@ -151,13 +161,19 @@ padding-bottom: var(--espaco_baixo);;
   /* position: relative; */
   width: 100%;
   /* border:2px green solid; */
-  display: grid; 
+  /* display: grid; 
   grid-template-columns: 1.2fr 0.9fr 0.1fr 0.9fr; 
   grid-template-rows: 1fr; 
   gap: 0px 0px; 
   grid-template-areas: 
-    ". . ."; 
+    ". . .";  */
     /* overflow: hidden; */
+overflow:scroll;
+overflow-x: auto;
+overflow-y: auto;
+    display: flex;
+    justify-content: space-around;
+    z-index: 100;
 }
 
 
@@ -225,14 +241,27 @@ margin-bottom: 6rem;
   
 
 
+  .corpo_entregas{
+    /* border:2px red solid; */
+    /* width: 100vw; */
+    display: flex;
+    height: 40rem;  
+    min-height: 60rem;
+    top:0px;
+    flex-direction: column; }
   .img_rodape{
    
     min-width: 80vw;
+    max-width: 85vw;
+    max-height: 24vh;
      }
+
+
   .rodape{
     height: 60rem;
     display: flex;
     flex-direction: column;
+    -ms-flex-align: end;
     /* border:forestgreen 4px solid; */
   }
 }

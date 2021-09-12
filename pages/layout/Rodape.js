@@ -1,9 +1,9 @@
 import styles from '../../styles/layout.module.css'
 
 import Divisoria from '../Componentes/Divisoria';
-import Navegacao_rod from '../Arranjos/Navegacao_rod';
+import NavegacaoRodape from '../Arranjos/NavegacaoRodape';
 import Image from 'next/dist/client/image';
-import Texto from '../Componentes/Texto';
+import TextoRodape from '../Componentes/TextoRodape';
 // import Navegacao from './layout/Navegacao';
 
 
@@ -31,6 +31,7 @@ const Rodape = () => {
          
           // maxWidth='100px'
           // margin={200}
+     
           objectFit='cover'
           // height='400px'
           // layout= "responsive"
@@ -38,15 +39,16 @@ const Rodape = () => {
           height={320*0.95}
           width={350*0.95}
           // minWidth='100px'
-          // maxWidth='100px'
+          // maxWidth={100}
          
           objectPosition='90% 68%'
           /> 
           </div>
           
-          <Texto/>
+          <TextoRodape/>
           {/* <Divisoria/>   */}
-            <Navegacao_rod/>
+      
+            <NavegacaoRodape/>
             
         {/* Quick Galetos */}
         
@@ -81,9 +83,9 @@ const Rodape = () => {
       /> 
       </div>
       
-      <Texto/>
-      <Divisoria/>  
-        <Navegacao_rod/>
+      <TextoRodape/>
+    
+        <NavegacaoRodape/>
         
 {/* Quick Galetos */}
 
