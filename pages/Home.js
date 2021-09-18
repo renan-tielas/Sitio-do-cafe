@@ -17,7 +17,7 @@ import { useState } from 'react';
 import Cardapio from './Cardapio';
 import Entregas from './Entregas';
 import Botao_ref from './Componentes/Botao_ref';
-import {useRef} from 'react'
+import { useRef } from 'react'
 
 import {
   BrowserView,
@@ -30,32 +30,32 @@ import {
 
 export default function Home({ conteudo }) {
 
-let posicaoElemento = useRef('nulo')
+  let posicaoElemento = useRef('nulo')
 
   const [renderiza, setRenderiza] = useState('inicio')
   // renderizaDimensao = 
 
 
-  const posiciona =() => {
-    posicaoElemento.current.scrollIntoView()    
+  const posiciona = () => {
+    posicaoElemento.current.scrollIntoView()
     console.log(posicaoElemento)
   }
 
-  function mudaRenderiza (pagina)  {
-        
-        // if (renderiza == 'inicio') {
-              setRenderiza(pagina)  
-              console.log('função liga',pagina)
-        // } else {
-        //    setRenderiza('inicio')
-        // console.log('função  desliga') }
-        
+  function mudaRenderiza(pagina) {
+
+    // if (renderiza == 'inicio') {
+    setRenderiza(pagina)
+    console.log('função liga', pagina)
+    // } else {
+    //    setRenderiza('inicio')
+    // console.log('função  desliga') }
+
   }
 
 
   // console.log(conteudo);
 
-  if (renderiza=='inicio') {
+  if (renderiza == 'inicio') {
     return (
       <div className={styles.estrutura}>
         <Head>
@@ -64,40 +64,40 @@ let posicaoElemento = useRef('nulo')
           <link rel="icon" href="/favicon.ico" />
           <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
         </Head>
-  
-  
-        <Cabecalho id='foo'funcao={mudaRenderiza}/>
-  
-        <div   className={styles.corpo}>
-          <Carrossel   conteudo={conteudo} />
- 
+
+
+        <Cabecalho id='foo' funcao={mudaRenderiza} />
+
+        <div className={styles.corpo}>
+          <Carrossel conteudo={conteudo} funcao={mudaRenderiza} />
+
           {/* <Comidas/> */}
-        
-        {/* <div className={styles.div_espaço}></div> */}
-  
-  
-        {/* <Link href="#foo" passHref> */}
- 
 
-  </div>
+          {/* <div className={styles.div_espaço}></div> */}
 
-{/* </Link> */}
+
+          {/* <Link href="#foo" passHref> */}
+
+
+        </div>
+
+        {/* </Link> */}
         {/* <IMGFundo /> */}
         <Rodape />
-  
-  
+
+
       </div>
     )
   }
-  if (renderiza=='cardapio') {
+  if (renderiza == 'cardapio') {
     // return   <div>dasdasd</div>
-    
-    return  <Cardapio conteudo={conteudo} mudaRenderiza={mudaRenderiza}></Cardapio>
+
+    return <Cardapio conteudo={conteudo} mudaRenderiza={mudaRenderiza}></Cardapio>
   }
-  if (renderiza=='entregas') {
+  if (renderiza == 'entregas') {
     // return   <div>dasdasd</div>
-    
-    return  <Entregas conteudo={conteudo} mudaRenderiza={mudaRenderiza}>fsdfsd</Entregas>
+
+    return <Entregas conteudo={conteudo} mudaRenderiza={mudaRenderiza}>fsdfsd</Entregas>
   }
 
 }

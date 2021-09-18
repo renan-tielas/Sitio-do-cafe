@@ -8,6 +8,7 @@ import Cabecalho from './layout/Cabecalho';
 import Rodape from './layout/Rodape';
 import TextoEntregas from './Componentes/TextoEntregas';
 import TextoEntregas_b from './Componentes/TextoEntregas_b';
+import TextoEntregas_c from './Componentes/TextoEntregas_c';
 import { useRef } from 'react';
 import { useState } from 'react';
 export default function Cardapio({ conteudo,mudaRenderiza }) {
@@ -36,6 +37,7 @@ export default function Cardapio({ conteudo,mudaRenderiza }) {
       <div  className={styles.corpo_entregas} >
       <TextoEntregas texto={['ababa']}/>
       <TextoEntregas_b texto={['ababa']}/>
+      <TextoEntregas_c texto={['ababa']}/>
       </div >
         
       {/*  */}

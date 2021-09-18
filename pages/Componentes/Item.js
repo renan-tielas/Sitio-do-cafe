@@ -61,12 +61,18 @@ const Item = ({ conteudo, posicao, nome, preco, preco_grande, descricao, foto, c
                                     Grande
                                 </a>
                                 </div>
-                                <Image className={styles.item_ativo_img} width={300}
+                                { foto? 
+                                    <Image className={styles.item_ativo_img} width={300}
                                     height='260'
                                     width='300'
                                     src={foto}
                                     
                                     crop />
+                                :
+                                    <div> Ainda não colocamos a foto deste item :( 
+                                    </div>
+                                }
+                                
                                     </div>
                             
                             )
@@ -103,11 +109,15 @@ const Item = ({ conteudo, posicao, nome, preco, preco_grande, descricao, foto, c
 
 
                                     </div>
+                                     {foto?
                                     <Image className={styles.item_ativo_img} width={300}
                                         height='260'
                                         width='300'
                                         src={foto}
-                                        crop />
+                                        crop /> :
+                                        <div> Ainda não colocamos a foto deste item :( 
+                                        </div>
+                                    }
                                 </div>
 
 
@@ -135,12 +145,17 @@ const Item = ({ conteudo, posicao, nome, preco, preco_grande, descricao, foto, c
                                         {/* se nao houver desCRICAO MUDAR ESTILO PRA FICAR MENOR */}
                                     </a>
                                     </div>
+                                    {foto?
                                     <Image className={styles.item_ativo_img} width={300}
                                         height='260'
                                         width='300'
                                         src={foto}
                                         marginRight='200'
-                                    />
+                                    />:
+                                        <div> <br/><br/>Ainda não colocamos a foto deste item :( 
+                                        </div>
+                                    }
+
                                 </div>)
                             :
                             // Sem preço grande sem descrção - ativo
@@ -161,11 +176,15 @@ const Item = ({ conteudo, posicao, nome, preco, preco_grande, descricao, foto, c
                                     </a>
                                    
                                     </div>
+                                    {foto?
                                     <Image className={styles.item_ativo_img} width={300}
                                         height='260'
                                         width='300'
                                         src={foto}
-                                    />
+                                    />:
+                                        <div> Ainda não colocamos a foto deste item :( 
+                                        </div>
+                                    }
                                 
                                 </div>
                             ))

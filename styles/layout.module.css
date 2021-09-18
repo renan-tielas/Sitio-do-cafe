@@ -75,22 +75,23 @@ padding-bottom: var(--espaco_baixo);;
   display: flex;
   /* height: 40rem;   */
   /* min-height: 100vh; */
- 
-  flex-direction: row;
+ flex-wrap: wrap;
+  flex-direction:row;
   min-height: 25rem;
 
   position: relative;
   top:80px;
-  z-index: 100;
-  align-items:center;
-  justify-content: center;
+  z-index: 1  ;
+  align-content:space-between;
+  justify-content: space-around;
   overflow-x: hidden;
   overflow-y: hidden;
-  align-content: center;
-border-color: red solid 4px;
+
+/* border-color: red solid 4px; */
 /* overflow-y:auto; */
 padding-bottom: var(--espaco_baixo);;
-padding: 0 2rem ;
+margin-bottom: var(--espaco_baixo);;
+padding: 4 6rem ;
 }
 
 .corpo_cardapio{

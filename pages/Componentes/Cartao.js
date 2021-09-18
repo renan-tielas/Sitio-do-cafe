@@ -9,9 +9,11 @@ export async function getStaticProps() {
   .then
 }
 
-const Cartao = ({texto,posicao,conteudo}) => {
+const Cartao = ({texto,posicao,conteudo,funcao,palavra}) => {
     return (
+      
       <div className={styles.cartao_3}>
+        <button onClick={() => funcao(palavra)}>
         <div className={styles.cartao_3_titulo}>
        {texto}
        </div>
@@ -28,11 +30,7 @@ const Cartao = ({texto,posicao,conteudo}) => {
         height={550}  
        />
 
-       {/* <div className={styles.conteudo_cartao_3}>
-         
-       {/* {conteudo[posicao].nome} 
-
-     </div> */}
+</button>
       </div>
     );
   };
