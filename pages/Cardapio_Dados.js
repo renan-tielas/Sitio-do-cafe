@@ -21,7 +21,5 @@ export async function getStaticProps() {
     }
 }
 
-export default Cardapio 
-
 
   export default Cardapio;
