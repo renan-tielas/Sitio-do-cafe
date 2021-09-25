@@ -5,7 +5,7 @@ module.exports = {
       ],
     }
     ,plugins: [
-      new Dotenv({
+      new dotenv({
             systemvars: true, // load all the predefined 'process.env' variables which will trump anything local per dotenv specs.
       
       })
