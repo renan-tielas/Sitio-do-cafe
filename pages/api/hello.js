@@ -8,8 +8,8 @@ export default async function (req, res) {
   const doc = new GoogleSpreadsheet('1oDcnxJsRb7qv_dGnaTBbQwuHxBNOoiUxS430GrL2lss');
   
   await doc.useServiceAccountAuth({
-    client_email: CLIENT_EMAIL,
-    private_key: PRIVATE_KEY,
+    client_email: process.env.CLIENT_EMAIL,
+    private_key: process.env.PRIVATE_KEY,
   });
 
 
