@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import {GoogleSpreadsheet} from 'google-spreadsheet'
-import credentials from '../../credentials/quick-galetos-edba7aae2f99'
+// import credentials from '../../credentials/quick-galetos-edba7aae2f99'
 require('dotenv').config();
 
 
