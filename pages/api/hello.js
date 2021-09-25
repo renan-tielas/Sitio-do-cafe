@@ -3,13 +3,14 @@ import {GoogleSpreadsheet} from 'google-spreadsheet'
 // import credentials from '../../credentials/quick-galetos-edba7aae2f99'
 require('dotenv').config();
 
-
+const cliente_email=process.env.CLIENT_EMAIL; 
+const chave_privada= process.env.PRIVATE_KEY;
 export default async function (req, res) {
   const doc = new GoogleSpreadsheet('1oDcnxJsRb7qv_dGnaTBbQwuHxBNOoiUxS430GrL2lss');
   
   await doc.useServiceAccountAuth({
-    client_email: process.env.CLIENT_EMAIL,
-    private_key: process.env.PRIVATE_KEY,
+    client_email: cliente_email,
+    private_key: chave_privada,
   });
 
 
