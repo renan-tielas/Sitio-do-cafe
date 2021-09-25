@@ -4,10 +4,7 @@ module.exports = {
       'drive.google.com'
       ],
     },
-    env: {  PRIVATE_KEY: process.env.PRIVATE_KEY,
-      CLIENT_EMAIL: process.env.CLIENT_EMAIL,
-          },
-
+   
     async redirects() {
       return [
         {
