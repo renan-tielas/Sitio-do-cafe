@@ -11,7 +11,7 @@ import Item from '../Componentes/Item'
 //     </button>));
 
 // {conteudo, pagina,posicao_a,posicao_b, titulo}
-const PaginaCardapio = (({key,conteudo, posicao_a,posicao_b, titulo,estaAtivo, poeAtivo},ref) => {
+const PaginaCardapio = (({key,conteudo, posicao_a, posicao_b, titulo,estaAtivo, poeAtivo},ref) => {
     let comidas_nome=[]
     let comidas_descricao=[]
     let comidas_preco=[]
@@ -22,16 +22,17 @@ const PaginaCardapio = (({key,conteudo, posicao_a,posicao_b, titulo,estaAtivo, p
 
 for (let i = posicao_a; i < posicao_b; i++) {
     numeros[i]=[i]
-comidas_nome[i]=conteudo[i].comida_nome
-comidas_descricao[i]=conteudo[i].comida_descricao
-comidas_preco[i]=conteudo[i].comida_preco
-comidas_preco_grande[i]=conteudo[i].comida_preco_grande
-comidas_foto[i]=conteudo[i].comida_foto
-categorias[i]=conteudo[i].categoria
+    categorias[i]=conteudo[0][i]
+comidas_nome[i]=conteudo[1][i]
+comidas_descricao[i]=conteudo[2][i]
+comidas_preco[i]=conteudo[3][i]
+comidas_preco_grande[i]=conteudo[4][i]
+comidas_foto[i]=conteudo[5][i]
+
 }
 
 
-
+console.log(conteudo)
 
     return (
 
@@ -45,7 +46,8 @@ categorias[i]=conteudo[i].categoria
 
      {
         numeros.map((numero,index)=>{
-            return <Item key={index}
+            return <div>
+            <Item key={index}
             nome={comidas_nome[numero]}
             descricao={comidas_descricao[numero]}
             indice={index}
@@ -53,8 +55,10 @@ categorias[i]=conteudo[i].categoria
             poeAtivo={poeAtivo}
             preco={comidas_preco[numero]}
             preco_grande={comidas_preco_grande[numero]}
-            foto={comidas_foto[numero]}
+            foto={comidas_foto[numero]}      
             categoria={categorias[numero]} />
+
+</div>
         })}
 
 </div>

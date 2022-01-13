@@ -4,12 +4,12 @@ import Image from 'next/image'
 // import DadosAPI from '../DadosAPI';
 
 
-export async function getStaticProps() {
-  const dadosDaAPI = await fetch('http://localhost:3000/api/hello')
-  .then
-}
+// export async function getStaticProps() {
+//   const dadosDaAPI = await fetch('http://localhost:3000/api/hello')
+//   .then
+// }
 
-const Cartao = ({texto,posicao,conteudo,funcao,palavra}) => {
+const Cartao = ({texto,posicao,conteudo,funcao,foto,palavra}) => {
     return (
       
       <div className={styles.cartao_3}>
@@ -21,7 +21,7 @@ const Cartao = ({texto,posicao,conteudo,funcao,palavra}) => {
 
 
        <Image className={styles.cartao_3_img}
-        src={conteudo[posicao].imagem}
+        src={foto}
         alt="descrição"
         // width='auto'
         width={650}

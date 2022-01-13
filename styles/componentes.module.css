@@ -327,6 +327,34 @@ font-weight: 800;
   /* border:5px solid pink; */
 }
 
+.texto{
+  padding:1.5rem 1.5rem;
+  position: relative;
+  text-align: justify;
+  /* border-right: 1px black solid   ; */
+  /* border-left: 1px black solid   ; */
+  background-color: rgb(255, 255, 255);
+  /* border-bottom: 2px var(--cor-azul) solid   ; */
+  border-right: 2px var(--cor-vermelho-claro) solid   ;
+  border-left: 2px var(--cor-azul) solid   ;
+  box-shadow: 1px 2px 0px 1px  var(--cor-azul) ;
+  border-radius: 40px;
+  font-size: 1.15rem;
+  /* top: 0.5rem; */
+  box-shadow: 2px 2px 10px 2px black;
+  /* left:10%; */
+  margin-left: 8rem;
+  left:-4rem;
+  width: 40%;
+  min-width: 280px;
+  min-height:auto;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  position: relative;
+  top:-3rem;
+  left: -5rem;
+}
+
 .texto_entregas{
   padding:3rem 3rem;
   position: relative;
@@ -345,7 +373,7 @@ font-weight: 800;
   /* left:10%; */
   margin-left: 8rem;
   left:-4rem;
-  width: 30%;
+  width: 20%;
   min-width: 280px;
   height: 20rem;
   font-weight: 600;
@@ -601,6 +629,9 @@ position: relative;
   /* color:var(--cor-3); */
   /* margin-bottom: 4rem; */
 }
+
+
+
 .item_nome{
   position: relative;
   top: 4px;
@@ -613,6 +644,10 @@ position: relative;
   font-size: 19px;
   /* border: orange 1px solid; */
 }
+
+
+
+
 .item_descricao{
   position: relative;
   /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
@@ -751,6 +786,13 @@ margin-bottom: 2rem;
   /* border:5px solid pink; */
 }
 
+
+.texto{
+ 
+  top:8rem;
+  margin-bottom: 2rem;
+ min-height: 24rem;
+   }
 .texto_entregas{
  
   top:8rem;
@@ -782,7 +824,7 @@ margin-bottom: 2rem;
     height: 4rem;
  }
   .cartao_3{
-    /* width: 60%; */
+    width: 100%;
 
     /* font-size: 1.6rem; */
     /* margin-top: 1rem; */

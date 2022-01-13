@@ -69,6 +69,8 @@ border-color: red solid 4px;
 padding-bottom: var(--espaco_baixo);;
 }
 
+
+
 .corpo_entregas{
   /* border:2px red solid; */
   /* width: 100vw; */
@@ -82,8 +84,10 @@ padding-bottom: var(--espaco_baixo);;
   position: relative;
   top:80px;
   z-index: 1  ;
-  align-content:space-between;
-  justify-content: space-around;
+  justify-self: center;
+  align-self: center;
+  /* align-content:space-between; */
+  justify-content: center;
   overflow-x: hidden;
   overflow-y: hidden;
 
@@ -208,6 +212,10 @@ overflow-y: auto;
   max-width: 800px;
   margin-top: 3rem;
 }
+
+
+
+
 
 @media (max-width: 700px) {
 

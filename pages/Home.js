@@ -19,6 +19,8 @@ import Entregas from './Entregas';
 import Botao_ref from './Componentes/Botao_ref';
 import { useRef } from 'react'
 
+import TextoCartao from './Componentes/TextoCartao';
+
 import {
   BrowserView,
   MobileView,
@@ -38,14 +40,14 @@ export default function Home({ conteudo }) {
 
   const posiciona = () => {
     posicaoElemento.current.scrollIntoView()
-    console.log(posicaoElemento)
+    // console.log(posicaoElemento)
   }
 
   function mudaRenderiza(pagina) {
 
     // if (renderiza == 'inicio') {
     setRenderiza(pagina)
-    console.log('função liga', pagina)
+    // console.log('função liga', pagina)
     // } else {
     //    setRenderiza('inicio')
     // console.log('função  desliga') }
@@ -70,7 +72,7 @@ export default function Home({ conteudo }) {
 
         <div className={styles.corpo}>
           <Carrossel conteudo={conteudo} funcao={mudaRenderiza} />
-
+          
           {/* <Comidas/> */}
 
           {/* <div className={styles.div_espaço}></div> */}
