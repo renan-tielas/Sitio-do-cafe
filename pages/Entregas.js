@@ -35,9 +35,9 @@ export default function Cardapio({ conteudo,mudaRenderiza }) {
     
       
       <div  className={styles.corpo_entregas} >
-      <TextoEntregas texto={['ababa']}/>
-      <TextoEntregas_b texto={['ababa']}/>
-      <TextoEntregas_c texto={['ababa']}/>
+      <TextoEntregas texto={['ababa']} n={1} />
+      <TextoEntregas_b texto={['ababa']} n={2}/>
+      <TextoEntregas_c texto={['ababa']} n={3}/>
       </div >
         
       {/*  */}
