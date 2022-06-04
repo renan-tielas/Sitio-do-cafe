@@ -307,6 +307,8 @@ font-weight: 800;
   /* transform: scale(1.03); */
   font-weight: 1000;
   /* border:5px solid white; */
+
+
 }
 
 
@@ -377,7 +379,7 @@ font-weight: 800;
 }
 
 .texto_entregas_b{
-  padding:3rem 3rem;
+  padding:3rem 2rem ;
   position: relative;
   text-align: justify;
   /* border-right: 1px black solid   ; */
@@ -395,9 +397,12 @@ font-weight: 800;
   margin-left: 8rem;
 
   left:-4rem;
-  width: 30%;
-  min-width: 280px;
-  height: 20rem;
+  /* width: 30%; */
+  /* min-width: 280px; */
+  /* height: 20rem; */
+  height: auto;
+  height:15rem;
+  width: 35rem;
   font-weight: 600;
   margin-bottom: 2rem;
 }
@@ -799,7 +804,9 @@ margin-bottom: 2rem;
  
     top:8rem;
     margin-bottom: 2rem;
-   min-height: 24rem;
+   /* min-height: 24rem; */
+   height: auto;
+   width: 20rem;
      }
  
   .navegacao{

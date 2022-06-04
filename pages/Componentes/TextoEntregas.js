@@ -6,8 +6,8 @@ import styles from '../../styles/componentes.module.css'
 const TextoEntregas = ({ conteudo, n }) => {
 
   return (
-<div>
-      <article className={styles.texto_entregas}>
+
+      <article className={styles.texto_entregas_b}>
         {/* <div className={styles.titulo_texto_grande}>
 Poema
 </div> */}
@@ -26,68 +26,10 @@ Poema
         Peça pelo telefone 2541-2897
         {/* {horarios[2]} */}
         <br />
-
         <br />
 
       </article>
 
-
-
-      <article className={styles.texto_entregas}>
-        {/* <div className={styles.titulo_texto_grande}>
-Poema
-</div> */}
-
-        {/* {textos[0]} */}
-
-        {/* {textos[1]} */}
-        Horários:
-        <br /><br />
-        <br />
-        Domingo à Terça - 12h as 17h
-        {/* {horarios[0]} */}
-        <br /><br />
-        <br />
-        Quarta à Sábado - - 12h as 20h
-        Peça pelo telefone 2541-2897
-        {/* {horarios[2]} */}
-        <br />
-
-        <br />
-
-      </article>
-
-
-
-
-
-
-      <article className={styles.texto_entregas}>
-        {/* <div className={styles.titulo_texto_grande}>
-Poema
-</div> */}
-
-        {/* {textos[0]} */}
-
-        {/* {textos[1]} */}
-        Horários:
-        <br /><br />
-        <br />
-        Domingo à Terça - 12h as 17h
-        {/* {horarios[0]} */}
-        <br /><br />
-        <br />
-        Quarta à Sábado - - 12h as 20h
-        Peça pelo telefone 2541-2897
-        {/* {horarios[2]} */}
-        <br />
-
-        <br />
-
-      </article>
-
-
-</div>
       // {/* <Conteudo_texto texto={conteudo.texto} posicao={0} /> */}
 
       );
