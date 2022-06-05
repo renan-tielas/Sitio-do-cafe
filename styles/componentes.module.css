@@ -376,6 +376,7 @@ font-weight: 800;
   height: 20rem;
   font-weight: 600;
   margin-bottom: 2rem;
+
 }
 
 .texto_entregas_b{
@@ -386,13 +387,13 @@ font-weight: 800;
   /* border-left: 1px black solid   ; */
   background-color: rgb(255, 255, 255);
   /* border-bottom: 2px var(--cor-azul) solid   ; */
-  border-right: 2px var(--cor-azul) solid   ;
-  border-left: 2px var(--cor-azul) solid   ;
+  /* border-right: 2px var(--cor-azul) solid   ; */
+  /* border-left: 2px var(--cor-azul) solid   ; */
   box-shadow: 1px 2px 0px 1px  var(--cor-azul) ;
   border-radius: 40px;
   font-size: 1.15rem;
   top: 0.5rem;
-  box-shadow: 2px 6px 10px 2px rgb(0, 0, 0,0.6);
+  /* box-shadow: 2px 6px 10px 2px rgb(0, 0, 0,0.6); */
   /* left:10%; */
   margin-left: 8rem;
 
@@ -405,6 +406,9 @@ font-weight: 800;
   width: 35rem;
   font-weight: 600;
   margin-bottom: 2rem;
+  border-bottom: 4px var(--cor-vermelho-claro) solid   ;
+  /* box-shadow: 1px 2px 0px 1px  var(--cor-azul) ; */
+  border-radius: 10px;
 }
 
 .titulo_texto_grande{
