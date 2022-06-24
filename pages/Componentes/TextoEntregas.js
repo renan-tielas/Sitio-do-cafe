@@ -15,18 +15,19 @@ Poema
         {/* {textos[0]} */}
 
         {/* {textos[1]} */}
-        Horários:
+        Horários de Entrega:
         <br /><br />
-        <br />
-        Domingo à Terça - 12h as 17h
+        <ul>
+        <li>Domingo à Terça - 12h as 17h</li>
         {/* {horarios[0]} */}
         <br /><br />
-        <br />
-        Quarta à Sábado - - 12h as 20h
-        Peça pelo telefone 2541-2897
+        <li>Quarta à Sábado - 12h as 20h</li>
+        </ul>
+        <br /><br />
+
+        <p style={textAllign="center"}>Peça pelo telefone 2541-2897</p>
         {/* {horarios[2]} */}
-        <br />
-        <br />
+     
 
       </article>
 

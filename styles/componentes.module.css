@@ -402,13 +402,14 @@ font-weight: 800;
   /* min-width: 280px; */
   /* height: 20rem; */
   height: auto;
-  height:15rem;
+  height:auto;
   width: 35rem;
   font-weight: 600;
   margin-bottom: 2rem;
   border-bottom: 4px var(--cor-vermelho-claro) solid   ;
   /* box-shadow: 1px 2px 0px 1px  var(--cor-azul) ; */
   border-radius: 10px;
+  
 }
 
 .titulo_texto_grande{
